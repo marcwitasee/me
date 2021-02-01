@@ -1,0 +1,202 @@
+body, html {
+    /*
+  The default html interpertation adds margin and padding to the basic elements
+  So it can be logically helpful to remove them from the beginning!
+  */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid rgb(88, 49, 179);
+  height: 44px;
+  margin: 0 8px
+}
+
+button:hover {
+  background-color: #303030;
+}
+
+button > a {
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(216, 222, 228);
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.center-alt {
+  align-items: center;
+}
+
+.main-sb {
+  width: 200px;
+}
+
+.main-hr-left {
+  width: 70%;
+  background-color:#1f1f1f;
+  margin: 0 32px 0 0;
+  border: 1px solid #303030;
+  border-radius: 3px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+
+.header-name {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.header-statement {
+  font-size: 24px;
+  color: rgb(216, 222, 228);
+  align-items: center;
+  padding: 0 0 18px 8px;
+  font-style: italic;
+}
+
+.header-menu {
+  justify-content: space-between;
+}
+
+.gh-icon {
+  height: 44px;
+  width: 44px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-right: 16px;
+}
+
+img.gh-icon:hover {
+  opacity: .80;
+  transform: scale(1.05);
+}
+
+#headshot {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #303030;
+  margin: 16px 16px 16px 16px;
+}
+
+#project-board-title {
+  border-top: 2px solid #303030;
+  margin: 0 0 0 0;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.project-image {
+  height: 300px;
+  width: 450px;
+  margin: 0px 64px 0 64px;
+  border: 2px solid #616161;
+  border-radius: 6px;
+}
+
+#bad-image {
+  filter: blur(.4px);
+}
+
+img.project-image:hover {
+  opacity: .85;
+  transform: scale(1.01);
+}
+
+#project-description {
+  margin: 36px 64px 3px 64px;
+  max-width: 450px;
+  font-size: 18px;
+  text-align: center;
+  font-style: oblique;
+  color: rgb(216, 222, 228);
+}
+
+.footer {
+  height: 125px;
+}
+
+#header-img {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #303030;
+  border-radius: 3px; 
+  margin-bottom: 32px;
+}
+
+.about-header {
+  width: 700px;
+  margin-top: 50px;
+}
+
+#about-text {
+  max-width: 702px;
+  background-color:#303030;
+  padding: 8px;
+  margin-bottom: 32px;
+  border-radius: 3px; 
+}
+
+.footer-image {
+  height: 200px;
+  width: 160px;
+  border: 1px solid #303030;
+  /* border-radius: 100%; */
+}
+
+.about-footer {
+  justify-content: space-around;
+  padding-top: 64px;
+  width: 60%;
+}
