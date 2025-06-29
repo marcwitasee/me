@@ -1,0 +1,20 @@
+<div class="project-card">
+    <div class="flex column-reverse">
+        <a href="{{ project.githubUrl or project.projectUrl }}" target="_blank" rel="noopener">
+            <img class="project-image {% if project.title == '311 Service Call Tracker' %}blur-image{% endif %}" 
+                 src="{{ project.image | url }}" 
+                 alt="{{ project.imageAlt }}"
+                 loading="lazy">
+        </a>
+        <div class="project-content">
+            <div class="project-description">
+                {{ project.description }}
+            </div>
+            <div class="project-technologies">
+                {% for tech in project.technologies %}
+                <span class="tech-badge tech-{{ tech | techBadge }}">{{ tech }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

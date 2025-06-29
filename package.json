@@ -1,0 +1,27 @@
+{
+  "name": "marc-richardson-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Marc Richardson",
+  "main": "index.js",
+  "scripts": {
+    "build": "ELEVENTY_ENV=production eleventy",
+    "build:local": "eleventy",
+    "serve": "eleventy --serve",
+    "watch": "eleventy --watch",
+    "start": "eleventy --serve --quiet",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "portfolio",
+    "eleventy",
+    "11ty",
+    "data-science"
+  ],
+  "author": "Marc Richardson",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.1"
+  },
+  "dependencies": {}
+}

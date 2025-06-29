@@ -1,0 +1,42 @@
+[
+  {
+    "title": "311 Service Call Tracker",
+    "description": "Employing big data architecture principles to build a 311 service call tracker using AWS tools",
+    "image": "/images/311-app.png",
+    "imageAlt": "Screenshot of a webpage",
+    "githubUrl": "https://github.com/marcwitasee/mpcs-53014-final-project",
+    "technologies": ["AWS", "Big Data", "Cloud Architecture", "Python"],
+    "date": "2023-12-01",
+    "featured": true
+  },
+  {
+    "title": "Coastal Water Level Prediction",
+    "description": "Contributing to data analytical software for predicting water levels near coastal communities",
+    "image": "/images/hohonucdac.png",
+    "imageAlt": "Screenshot of a blog post",
+    "projectUrl": "https://cdac.uchicago.edu/news/new-clinic-leverages-data-science-for-social-and-environmental-causes/",
+    "technologies": ["Python", "Machine Learning", "Environmental Science", "Data Analysis"],
+    "date": "2023-10-01",
+    "featured": true
+  },
+  {
+    "title": "Gentrification Prediction Model",
+    "description": "Training a predictive model to identify neighborhoods at risk of gentrification",
+    "image": "/images/Lower 40 Percent Income Census Tracts that Ascended in Top 90 Percent, Chicago.png",
+    "imageAlt": "A choropleth map of Chicago",
+    "githubUrl": "https://github.com/marcwitasee/CAPP30254-Project",
+    "technologies": ["Machine Learning", "Python", "Spatial Analysis", "Urban Planning"],
+    "date": "2023-06-01",
+    "featured": true
+  },
+  {
+    "title": "Political Party Switching Analysis",
+    "description": "Developing software to spot opportunists in Peru's political system",
+    "image": "/images/partyswitching.png",
+    "imageAlt": "A screenshot of a graph chart",
+    "githubUrl": "https://github.com/marcwitasee/mtrichardson/tree/master/CAPP_122%20Project",
+    "technologies": ["Python", "Data Visualization", "Political Science", "Statistical Analysis"],
+    "date": "2023-03-01",
+    "featured": true
+  }
+]

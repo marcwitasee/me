@@ -1,0 +1,21 @@
+{
+  "title": "Marc Richardson",
+  "description": "Personal portfolio of Marc Richardson - Using data analytical tools to help policymakers responsibly design and deploy technology",
+  "url": "https://marcwitasee.github.io",
+  "author": {
+    "name": "Marc Richardson",
+    "email": "marc@example.com",
+    "github": "https://github.com/marcwitasee",
+    "linkedin": "https://www.linkedin.com/in/marctrichardson/"
+  },
+  "navigation": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "About",
+      "url": "/about/"
+    }
+  ]
+}

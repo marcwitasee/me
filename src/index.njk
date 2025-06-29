@@ -1,0 +1,33 @@
+---
+layout: base
+title: Home - Marc Richardson
+description: Personal portfolio of Marc Richardson - Using data analytical tools to help policymakers responsibly design and deploy technology
+---
+
+{% include "header.njk" %}
+
+<div class="flex column">
+    <div class="flex center header-name" id="project-board-title">
+        <div style="padding:16px;">My Projects</div>
+    </div>
+    
+    <div class="projects-grid">
+        {% set projectPairs = [] %}
+        {% for project in projects %}
+            {% if loop.index0 % 2 == 0 %}
+                {% set projectPairs = (projectPairs.push([project]), projectPairs) %}
+            {% else %}
+                {% set lastIndex = projectPairs.length - 1 %}
+                {% set projectPairs = (projectPairs[lastIndex].push(project), projectPairs) %}
+            {% endif %}
+        {% endfor %}
+        
+        {% for pair in projectPairs %}
+        <div class="flex space-around">
+            {% for project in pair %}
+                {% include "project-card.njk" %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
