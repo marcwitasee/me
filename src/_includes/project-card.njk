@@ -1,20 +1,39 @@
-<div class="project-card">
-    <div class="flex column-reverse">
-        <a href="{{ project.githubUrl or project.projectUrl }}" target="_blank" rel="noopener">
-            <img class="project-image {% if project.title == '311 Service Call Tracker' %}blur-image{% endif %}" 
-                 src="{{ project.image | url }}" 
-                 alt="{{ project.imageAlt }}"
-                 loading="lazy">
-        </a>
+<article class="project-card">
+    <div class="project-card-inner">
+        <div class="project-image-container">
+            <a href="{{ project.githubUrl or project.projectUrl }}" target="_blank" rel="noopener" class="project-link">
+                <img class="project-image {% if project.title == '311 Service Call Tracker' %}blur-image{% endif %}" 
+                     src="{{ project.image | url }}" 
+                     alt="{{ project.imageAlt }}"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <span class="project-view-text">View Project</span>
+                </div>
+            </a>
+            <div class="project-date-badge">{{ project.date | dateDisplay }}</div>
+        </div>
+        
         <div class="project-content">
-            <div class="project-description">
-                {{ project.description }}
-            </div>
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            
             <div class="project-technologies">
                 {% for tech in project.technologies %}
                 <span class="tech-badge tech-{{ tech | techBadge }}">{{ tech }}</span>
                 {% endfor %}
             </div>
+            
+            <div class="project-footer">
+                <a href="{{ project.githubUrl or project.projectUrl }}" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="project-link-button">
+                    <span>{% if project.githubUrl %}View Code{% else %}Learn More{% endif %}</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
-</div>
+</article>
