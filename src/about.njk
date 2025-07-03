@@ -4,23 +4,44 @@ title: About - Marc Richardson
 description: Learn more about Marc Richardson's background in data science and public policy
 ---
 
-<div class="about-page-container">
-    <div class="flex column center about-header">
-        <img id="header-img" src="{{ '/images/IMG_0755.jpeg' | url }}" alt="A picture from the top of Keystone Ski Resort in Colorado">
-        <div class="header-name">About me</div>
+<div class="about-hero-section">
+    <div class="hero-background">
+        <div class="gradient-overlay"></div>
+        <div class="pattern-overlay"></div>
     </div>
     
+    <div class="about-hero-content">
+        <div class="about-text-section">
+            <span class="hero-greeting">Get to know</span>
+            <h1 class="hero-name">About Me</h1>
+            <div class="hero-tagline">
+                <span class="tagline-static">Building the future with</span>
+                <span class="tagline-dynamic"></span>
+            </div>
+        </div>
+        <div class="about-image-section">
+            <div class="mountain-container">
+                <div class="mountain-glow"></div>
+                <img class="mountain-image" src="{{ '/images/IMG_0755.jpeg' | url }}" alt="A picture from the top of Keystone Ski Resort in Colorado">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-content-wrapper">
     <div id="about-text">
-        <p>I am a graduate student at the Harris School of Public Policy seeking to expand my data analytical skills with coursework in computer science, statistics, and economics. I strive to become a leader in technology policy, helping to create and implement evidence-based policies, in collaboration with the government and the private sector, to ensure disruptive new technologies indiscriminately serve the public interest.</p>
-        
-        <p>I grew up in Colorado, a place very near and dear to my heart. I attended the College of William and Mary where I majored in Economics and International Relations. I moved up to DC after graduating to work for an economic consulting company, where I applied statistical and economic analysis to antitrust and intellectual property cases. My work primarily consisted of consulting on cases involving patent infringement in smartphones. It was through this work that I became interested in technology policy and the societal implications of how technology is used at large.</p>
-        
-        <p>I currently reside in Chicago for my graduate program. But, I spend a lot of time in Colorado, where most of my family lives. Nothing energizes me more than a beautiful day of skiing or hiking. Outdoors rock!</p>
+        <p>At the intersection of cloud computing, edge infrastructure, and data-driven decision-making, I specialize in designing and managing large-scale technical projects that optimize performance, scalability, and impact.</p>
+        <p>At the University of Chicago, I've led strategic initiatives in cloud and edge computing—building and operating infrastructure that powers broadband measurement, high-performance computing, and advanced research applications. My work has directly supported scalable cloud platforms, fleet management systems, and real-world data-driven insights, benefiting researchers, organizations, and policymakers alike.</p>
+        <p>With expertise in cloud infrastructure (OpenStack, AWS), data pipelines (storage, compute, architecture), and AI-driven systems (OpenAI, Anthropic APIs), I bring a strong background in technical project leadership and cross-functional execution—bridging strategic goals with scalable cloud architectures, intelligent automation, and high-performance data platforms.</p>
+        <p>I'm excited to apply my expertise in cloud infrastructure, AI systems, and scalable data solutions to fast-moving, innovation-driven environments in the tech industry.</p>
     </div>
     
-    <div class="about-nav">
-        <button>
-            <a href="{{ '/' | url }}">back</a>
+    <div class="about-cta">
+        <button class="cta-primary">
+            <a href="{{ '/assets/resume.pdf' | url }}" target="_blank">View Resume</a>
+        </button>
+        <button class="cta-secondary">
+            <a href="{{ '/' | url }}">Back to Projects</a>
         </button>
     </div>
 </div>

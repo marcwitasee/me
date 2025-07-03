@@ -31,7 +31,15 @@
     
     <script>
         // Typing animation for hero tagline
-        const phrases = [
+        const isAboutPage = window.location.pathname.includes('/about');
+        const phrases = isAboutPage ? [
+            "cloud infrastructure expertise",
+            "data-driven innovation", 
+            "scalable AI systems",
+            "technical leadership",
+            "edge computing solutions",
+            "research & development"
+        ] : [
             "design responsible AI policies",
             "leverage data for social good",
             "build ethical tech solutions",
