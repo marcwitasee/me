@@ -1,47 +1,24 @@
 ---
-layout: base
-title: About - Marc Richardson
-description: Learn more about Marc Richardson's background in data science and public policy
+layout: base.njk
+title: About
+description: Background on Marc Richardson, who takes AI and cloud infrastructure platforms from pilot to production.
+permalink: /about/
 ---
 
-<div class="about-hero-section">
-    <div class="hero-background">
-        <div class="gradient-overlay"></div>
-        <div class="pattern-overlay"></div>
-    </div>
-    
-    <div class="about-hero-content">
-        <div class="about-text-section">
-            <span class="hero-greeting">Get to know</span>
-            <h1 class="hero-name">About Me</h1>
-            <div class="hero-tagline">
-                <span class="tagline-static">Building the future with</span>
-                <span class="tagline-dynamic"></span>
-            </div>
-        </div>
-        <div class="about-image-section">
-            <div class="mountain-container">
-                <div class="mountain-glow"></div>
-                <img class="mountain-image" src="{{ '/images/IMG_0755.jpeg' | url }}" alt="A picture from the top of Keystone Ski Resort in Colorado">
-            </div>
+<section class="container section about">
+    <div class="about-text prose">
+        <h1>About me</h1>
+        <p>I take technical platforms from pilot to production and make sure the people who depend on them actually succeed with them. My work sits where infrastructure, customers and funding meet: scoping what a partner needs, getting it deployed, and showing the results to the people who pay for it.</p>
+        <p>Most recently I was the Senior Technical Project Manager for <a href="{{ '/work/chameleon-platform/' | url }}">Chameleon Cloud</a> at the University of Chicago, an NSF-funded cloud platform with 15,000+ users. I kept $14M in grants renewed, cut onboarding time by about 40%, and led <a href="{{ '/work/chameleon-ai-docs/' | url }}">an AI documentation pilot</a> using retrieval-augmented generation that brought in $2.5M in new funding. Before that I ran the national rollout of <a href="{{ '/work/floto-rollout/' | url }}">FLOTO</a>, taking a broadband measurement platform from zero to more than 1,000 edge devices for over a dozen State Broadband Offices.</p>
+        <p>I started my career at <a href="{{ '/work/criterion-economics/' | url }}">Criterion Economics</a>, doing economic analysis for Fortune 500 clients in major litigation, and then earned an MS in Computational Analysis and Public Policy at UChicago.</p>
+        <p>Since leaving Chameleon I've been running <a href="{{ '/work/llm-ticket-triage/' | url }}">hands-on LLM deployment experiments</a> on Fireworks AI and the Anthropic API: comparing open and frontier models on cost, latency and accuracy, fine-tuning small models, and writing up what I'd tell a customer. I'm looking for roles in AI deployment, technical program management and solutions work on AI and cloud infrastructure.</p>
+        <p>I'm based in Chicago and speak English and Spanish.</p>
+        <div class="hero-cta">
+            <a class="btn btn-primary" href="{{ '/resume/' | url }}">View resume</a>
+            <a class="btn btn-secondary" href="mailto:{{ site.author.email }}">Email me</a>
         </div>
     </div>
-</div>
-
-<div class="about-content-wrapper">
-    <div id="about-text">
-        <p>At the intersection of cloud computing, edge infrastructure, and data-driven decision-making, I specialize in designing and managing large-scale technical projects that optimize performance, scalability, and impact.</p>
-        <p>At the University of Chicago, I've led strategic initiatives in cloud and edge computing—building and operating infrastructure that powers broadband measurement, high-performance computing, and advanced research applications. My work has directly supported scalable cloud platforms, fleet management systems, and real-world data-driven insights, benefiting researchers, organizations, and policymakers alike.</p>
-        <p>With expertise in cloud infrastructure (OpenStack, AWS), data pipelines (storage, compute, architecture), and AI-driven systems (OpenAI, Anthropic APIs), I bring a strong background in technical project leadership and cross-functional execution—bridging strategic goals with scalable cloud architectures, intelligent automation, and high-performance data platforms.</p>
-        <p>I'm excited to apply my expertise in cloud infrastructure, AI systems, and scalable data solutions to fast-moving, innovation-driven environments in the tech industry.</p>
+    <div class="about-image">
+        <img src="{{ '/images/IMG_0755.jpeg' | url }}" alt="The view from the top of Keystone Resort in Colorado" loading="lazy">
     </div>
-    
-    <div class="about-cta">
-        <button class="cta-primary">
-            <a href="{{ '/assets/resume.pdf' | url }}" target="_blank">View Resume</a>
-        </button>
-        <button class="cta-secondary">
-            <a href="{{ '/' | url }}">Back to Projects</a>
-        </button>
-    </div>
-</div>
+</section>

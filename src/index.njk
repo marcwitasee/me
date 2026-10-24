@@ -1,27 +1,71 @@
 ---
-layout: base
-title: Home - Marc Richardson
-description: Personal portfolio of Marc Richardson - Using data analytical tools to help policymakers responsibly design and deploy technology
+layout: base.njk
+description: Marc Richardson takes AI and cloud infrastructure platforms from pilot to production. Overview of his work at Chameleon Cloud, FLOTO and Criterion Economics, plus hands-on LLM deployment benchmarks.
 ---
 
-{% include "header.njk" %}
-
-<section class="projects-section">
-    <div class="projects-background">
-        <div class="projects-gradient-overlay"></div>
-        <div class="projects-pattern-overlay"></div>
-    </div>
-    
-    <div class="projects-header">
-        <div class="projects-title-container">
-            <h2 class="projects-title">Featured Projects</h2>
-            <p class="projects-subtitle">Exploring the intersection of data science and public policy</p>
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1 class="hero-name">Marc Richardson</h1>
+            <div class="hero-title">{{ site.headline }}</div>
+            <p class="hero-summary">I take AI and cloud infrastructure platforms from pilot to production, working with the customers and partners who use them. I've spent the last five years running delivery for a research cloud with 15,000+ users and a national fleet of 1,000+ edge devices, and I now benchmark open and frontier LLMs on cost, latency and accuracy.</p>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="{{ '/work/' | url }}">See my work</a>
+                <a class="btn btn-secondary" href="{{ '/assets/resume.pdf' | url }}">Download resume</a>
+            </div>
+            <ul class="hero-social">
+                <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+                <li><a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a></li>
+                <li><a href="{{ site.author.github }}" rel="noopener">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <img src="{{ '/images/profile.jpeg' | url }}" alt="Marc Richardson">
         </div>
     </div>
-    
+</section>
+
+<section class="container section">
+    <ul class="impact-strip" aria-label="Highlights">
+        {% for stat in impact %}
+        <li class="metric"><span class="metric-value">{{ stat.value }}</span><span class="metric-label">{{ stat.label }}</span></li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="container section">
+    <div class="section-header">
+        <h2>Selected work</h2>
+        <a class="section-link" href="{{ '/work/' | url }}">All work →</a>
+    </div>
     <div class="projects-grid">
-        {% for project in projects %}
+        {% for item in collections.featuredWork %}
             {% include "project-card.njk" %}
         {% endfor %}
     </div>
+</section>
+
+<section class="container section">
+    <div class="section-header">
+        <h2>Experience</h2>
+        <a class="section-link" href="{{ '/resume/' | url }}">Full resume →</a>
+    </div>
+    <ol class="timeline">
+        {% for job in experience %}
+        <li class="timeline-item">
+            <div class="timeline-dates">{{ job.dates }}</div>
+            <div>
+                <h3 class="timeline-role"><a href="{{ job.link | url }}">{{ job.role }}</a></h3>
+                <div class="timeline-org">{{ job.org }}</div>
+                <p>{{ job.summary }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+</section>
+
+<section class="container section contact-band">
+    <h2>Let's talk</h2>
+    <p>I'm looking for AI deployment, technical program management and solutions roles on AI and cloud infrastructure. The fastest way to reach me is email.</p>
+    <a class="btn btn-primary" href="mailto:{{ site.author.email }}">Email me</a>
 </section>

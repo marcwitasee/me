@@ -1,6 +1,6 @@
 # Marc Richardson Portfolio Website
 
-A modern, professional portfolio website built with [Eleventy](https://www.11ty.dev/) (11ty) static site generator. Features a dark GitHub-inspired theme, responsive design, and easy content management through data files.
+A living resume and project portfolio built with [Eleventy](https://www.11ty.dev/) (11ty) static site generator. Features a dark GitHub-inspired theme, responsive design, and easy content management through data files.
 
 ## Features
 
@@ -42,68 +42,61 @@ npm start
 
 ```
 me/
-├── src/                      # Source files
-│   ├── _data/               # Data files
-│   │   ├── projects.json    # Project information
-│   │   └── site.json        # Site metadata
-│   ├── _includes/           # Reusable components
-│   │   ├── header.njk       # Site header
-│   │   └── project-card.njk # Project card component
-│   ├── _layouts/            # Page layouts
-│   │   └── base.njk         # Base HTML layout
-│   ├── css/                 # Stylesheets
-│   │   └── style.css        # Main stylesheet
-│   ├── images/              # Image assets
-│   ├── assets/              # Other assets (PDFs, etc.)
-│   ├── index.njk            # Homepage
-│   └── about.njk            # About page
-├── _site/                   # Generated output (git ignored)
-├── .eleventy.js             # 11ty configuration
-├── package.json             # Node dependencies
-└── README.md                # This file
+├── src/
+│   ├── _data/
+│   │   ├── site.json          # Name, headline, links, nav, "last updated" date
+│   │   ├── impact.json        # Numbers in the home page impact strip
+│   │   ├── experience.json    # Home page experience timeline
+│   │   └── publications.json  # Publications page and resume list
+│   ├── _includes/project-card.njk
+│   ├── _layouts/
+│   │   ├── base.njk           # Nav, footer, page shell
+│   │   └── project.njk        # Case study page template
+│   ├── work/                  # One Markdown file per project
+│   ├── js/work-filter.js      # Filter buttons on the Work page
+│   ├── css/style.css
+│   ├── images/
+│   ├── assets/resume.pdf      # Resume PDF linked across the site
+│   ├── index.njk              # Home (recruiter overview)
+│   ├── work.njk               # /work/ catalog
+│   ├── publications.njk
+│   ├── about.njk
+│   └── resume.njk             # HTML resume
+└── .eleventy.js
 ```
 
-## Adding New Projects
+## Adding a Project
 
-To add a new project to your portfolio:
+Add a Markdown file to `src/work/`. It shows up on the Work page automatically, and on the home page if `featured: true`.
 
-1. Open `src/_data/projects.json`
-2. Add a new project object to the array:
+```markdown
+---
+layout: project.njk
+title: "What the project answered or delivered"
+summary: "One or two sentences for the card and the top of the page."
+type: professional        # professional | independent | academic
+org: Company or context
+role: Your role
+dates: "Jan 2026 – Mar 2026"
+order: 7                  # lower numbers sort first
+featured: true            # show on the home page
+highlight: "One headline result for the card."
+technologies: ["Python", "AWS"]
+metrics:
+  - { value: "40%", label: "what the number means" }
+links:
+  - { label: "Code on GitHub", url: "https://github.com/..." }
+---
 
-```json
-{
-  "title": "Your Project Title",
-  "description": "Brief description of what the project does",
-  "image": "/images/your-project-screenshot.png",
-  "imageAlt": "Description of the screenshot",
-  "githubUrl": "https://github.com/yourusername/project-repo",
-  "technologies": ["Python", "Machine Learning", "AWS"],
-  "date": "2024-01-01",
-  "featured": true
-}
+## The problem
+## My role
+## What I did
+## Results
 ```
 
-3. Add your project screenshot to `src/images/`
-4. The project will automatically appear on the homepage
+For a project that only links elsewhere (no case study page), set `externalUrl`, `externalLabel` and `permalink: false`, and add `image` / `imageAlt` for a thumbnail.
 
-### Project Fields
-
-- **title**: Project name (required)
-- **description**: Brief project description (required)
-- **image**: Path to project screenshot (required)
-- **imageAlt**: Alt text for accessibility (required)
-- **githubUrl**: Link to GitHub repository (optional)
-- **projectUrl**: Alternative link if not on GitHub (optional)
-- **technologies**: Array of technologies used (required)
-- **date**: Project date in YYYY-MM-DD format (required)
-- **featured**: Boolean to highlight project (optional)
-
-## Updating Site Information
-
-Edit `src/_data/site.json` to update:
-- Site title and description
-- Your name and social links
-- Navigation menu items
+When you add something, bump `updated` in `src/_data/site.json` so the footer date stays current.
 
 ## Customizing Styles
 
@@ -114,16 +107,9 @@ The site uses CSS custom properties for easy theming. Edit `src/css/style.css` t
 - Spacing: Adjust padding and margins
 - Animations: Customize transitions and effects
 
-### Technology Badge Colors
+### Type Badge Colors
 
-Add new technology colors in the CSS:
-
-```css
-.tech-your-tech { 
-  border-color: #yourcolor; 
-  color: #yourcolor; 
-}
-```
+The Professional / Independent / Academic badge colors are the `--color-professional`, `--color-independent` and `--color-academic` variables in `:root`.
 
 ## Development Commands
 
@@ -167,7 +153,7 @@ npm run build
 To use a custom domain with GitHub Pages:
 
 1. Create a `CNAME` file in the `src/` directory with your domain
-2. Update the `pathPrefix` in `.eleventy.js` if needed
+2. Change `pathPrefix` in `.eleventy.js` from `'/me'` to `'/'` and update `url` in `src/_data/site.json`
 3. Configure your domain's DNS settings
 
 ## Configuration
@@ -192,9 +178,9 @@ pathPrefix: process.env.ELEVENTY_ENV === 'production' ? '/your-subdirectory' : '
 
 ### Common Issues
 
-1. **Build fails**: Ensure all image paths in `projects.json` exist in `src/images/`
+1. **Build fails**: Ensure image paths in `src/work/*.md` exist in `src/images/`
 2. **Styles not loading**: Check that CSS file paths use the `url` filter
-3. **Projects not showing**: Verify JSON syntax in `src/_data/projects.json`
+3. **Projects not showing**: Check the front matter in `src/work/*.md` (YAML syntax, `type` value)
 4. **Deploy fails**: Check GitHub Actions logs for specific errors
 
 ### Development Tips

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "The Cost of Operationalizing ML at Scale",
+    "venue": "SC'25 (International Conference for High Performance Computing, Networking, Storage, and Analysis)",
+    "year": 2025,
+    "summary": "Evaluates the cloud cost of deploying and operating machine learning systems at scale.",
+    "url": ""
+  },
+  {
+    "title": "How Wi-Fi Bottlenecks Affect Home Access Networks",
+    "venue": "ACM Internet Measurement Conference (IMC '24)",
+    "year": 2024,
+    "summary": "Documents home network performance and where in-home Wi-Fi, rather than the broadband connection, becomes the bottleneck.",
+    "url": ""
+  },
+  {
+    "title": "Scaling Edge Computing: Lessons from Real Device Deployments",
+    "venue": "IEEE International Conference on e-Science (e-Science '23)",
+    "year": 2023,
+    "summary": "Describes the FLOTO architecture and what it took to deploy and operate a national fleet of measurement devices.",
+    "url": ""
+  }
+]

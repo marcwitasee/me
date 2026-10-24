@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Publications
+description: Peer-reviewed papers Marc Richardson has co-authored on cloud cost of ML, home network performance and edge computing deployments.
+permalink: /publications/
+---
+
+<section class="container section narrow">
+    <header class="page-header">
+        <h1>Publications</h1>
+        <p>Peer-reviewed papers from my work on Chameleon Cloud and FLOTO.</p>
+    </header>
+
+    <ol class="pub-list">
+        {% for pub in publications %}
+        <li class="pub-item">
+            <div class="pub-year">{{ pub.year }}</div>
+            <div>
+                <h2 class="pub-title">{% if pub.url %}<a href="{{ pub.url }}" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h2>
+                <div class="pub-venue">{{ pub.venue }}</div>
+                <p>{{ pub.summary }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+
+    <h2 class="subhead">Talks and outreach</h2>
+    <p>At Chameleon I launched and presented a quarterly webinar series (14+ sessions) and a monthly newsletter that helped users adopt new platform features, including its AI capabilities.</p>
+</section>

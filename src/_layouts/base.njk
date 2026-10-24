@@ -2,90 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <title>{{ title or site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.headline }}{% endif %}</title>
     <meta name="description" content="{{ description or site.description }}" />
-    
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ title or site.title }}" />
     <meta property="og:description" content="{{ description or site.description }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    
+    <meta property="og:image" content="{{ site.url }}{{ ogImage or '/images/profile.jpeg' }}" />
+
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body class="flex space-between">
-    <div class="main-sb"></div>
-    <div class="flex main-center">
-        <div>
-            {% block content %}
-            {{ content | safe }}
-            {% endblock %}
-            <div class="footer"></div>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-nav">
+        <div class="container nav-inner">
+            <a class="nav-brand" href="{{ '/' | url }}">Marc Richardson</a>
+            <nav aria-label="Main">
+                <ul class="nav-links">
+                    {% for item in site.navigation %}
+                    {% set active = (page.url == item.url) or (item.url != '/' and page.url.startsWith(item.url)) %}
+                    <li><a href="{{ item.url | url }}"{% if active %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="main-sb"></div>
-    
-    <script>
-        // Typing animation for hero tagline
-        const isAboutPage = window.location.pathname.includes('/about');
-        const phrases = isAboutPage ? [
-            "cloud infrastructure expertise",
-            "data-driven innovation", 
-            "scalable AI systems",
-            "technical leadership",
-            "edge computing solutions",
-            "research & development"
-        ] : [
-            "design responsible AI policies",
-            "leverage data for social good",
-            "build ethical tech solutions",
-            "create data-driven insights",
-            "deploy technology responsibly",
-            "foster inclusive innovation",
-            "drive sustainable development"
-        ];
-        
-        let phraseIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingSpeed = 100;
-        
-        function typeWriter() {
-            const dynamicElement = document.querySelector('.tagline-dynamic');
-            if (!dynamicElement) return;
-            
-            const currentPhrase = phrases[phraseIndex];
-            
-            if (isDeleting) {
-                charIndex--;
-                dynamicElement.textContent = currentPhrase.substring(0, charIndex);
-                typingSpeed = 50;
-            } else {
-                charIndex++;
-                dynamicElement.textContent = currentPhrase.substring(0, charIndex);
-                typingSpeed = 100;
-            }
-            
-            if (!isDeleting && charIndex === currentPhrase.length) {
-                isDeleting = true;
-                typingSpeed = 2000; // Pause at end
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                typingSpeed = 500; // Pause before new phrase
-            }
-            
-            setTimeout(typeWriter, typingSpeed);
-        }
-        
-        // Start typing animation when page loads
-        window.addEventListener('load', () => {
-            setTimeout(typeWriter, 1000);
-        });
-    </script>
+    </header>
+
+    <main id="main">
+        {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Marc Richardson</strong> · {{ site.headline }} · {{ site.location }}
+                <div class="footer-meta">Last updated {{ site.updated | dateDisplay }}</div>
+            </div>
+            <ul class="footer-links">
+                <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+                <li><a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a></li>
+                <li><a href="{{ site.author.github }}" rel="noopener">GitHub</a></li>
+                <li><a href="{{ '/assets/resume.pdf' | url }}">Resume (PDF)</a></li>
+            </ul>
+        </div>
+    </footer>
+    {% if scripts %}{% for s in scripts %}<script src="{{ s | url }}" defer></script>{% endfor %}{% endif %}
 </body>
 </html>

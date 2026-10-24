@@ -1,7 +1,10 @@
 {
   "title": "Marc Richardson",
-  "description": "Personal portfolio of Marc Richardson - Using data analytical tools to help policymakers responsibly design and deploy technology",
-  "url": "https://marcwitasee.github.io",
+  "headline": "AI & Cloud Infrastructure Deployment",
+  "description": "Marc Richardson takes AI and cloud infrastructure platforms from pilot to production, working with the customers and partners who use them.",
+  "url": "https://marcwitasee.github.io/me",
+  "location": "Chicago, IL",
+  "updated": "2026-10-24",
   "author": {
     "name": "Marc Richardson",
     "email": "marc.t.richardson@gmail.com",
@@ -9,13 +12,10 @@
     "linkedin": "https://www.linkedin.com/in/marcwitasee/"
   },
   "navigation": [
-    {
-      "text": "Home",
-      "url": "/"
-    },
-    {
-      "text": "About",
-      "url": "/about/"
-    }
+    { "text": "Home", "url": "/" },
+    { "text": "Work", "url": "/work/" },
+    { "text": "Publications", "url": "/publications/" },
+    { "text": "About", "url": "/about/" },
+    { "text": "Resume", "url": "/resume/" }
   ]
 }

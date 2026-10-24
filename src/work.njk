@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Work
+description: A catalog of Marc Richardson's professional, independent and academic projects in AI deployment, cloud infrastructure, edge computing and data analysis.
+permalink: /work/
+scripts:
+  - /js/work-filter.js
+---
+
+<section class="container section">
+    <header class="page-header">
+        <h1>Work</h1>
+        <p>Everything I've worked on, from professional platform delivery to independent LLM experiments and graduate projects. Each card opens a short case study covering the problem, my role, what I did and the results.</p>
+    </header>
+
+    <div class="filter-bar" role="group" aria-label="Filter by type" hidden>
+        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-filter="professional" aria-pressed="false">Professional</button>
+        <button type="button" class="filter-btn" data-filter="independent" aria-pressed="false">Independent</button>
+        <button type="button" class="filter-btn" data-filter="academic" aria-pressed="false">Academic</button>
+    </div>
+
+    {% set groups = [
+        { key: "professional", label: "Professional" },
+        { key: "independent", label: "Independent" },
+        { key: "academic", label: "Academic" }
+    ] %}
+    {% for g in groups %}
+    <section class="work-group" id="{{ g.key }}" data-group="{{ g.key }}">
+        <h2>{{ g.label }}</h2>
+        <div class="projects-grid">
+            {% for item in collections.work | ofType(g.key) %}
+                {% include "project-card.njk" %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+</section>

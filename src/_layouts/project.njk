@@ -1,0 +1,44 @@
+---
+layout: base.njk
+---
+<article class="container case-study">
+    <a class="back-link" href="{{ '/work/' | url }}">← All work</a>
+
+    <header class="case-header">
+        <div class="project-meta">
+            <span class="type-badge type-{{ type }}">{{ type | capitalize }}</span>
+            <span class="project-dates">{{ dates }}</span>
+        </div>
+        <h1 class="case-title">{{ title }}</h1>
+        {% if org %}<div class="case-org">{{ org }}{% if role %} · {{ role }}{% endif %}</div>{% endif %}
+        <p class="case-summary">{{ summary }}</p>
+    </header>
+
+    {% if metrics %}
+    <ul class="metric-row">
+        {% for m in metrics %}
+        <li class="metric"><span class="metric-value">{{ m.value }}</span><span class="metric-label">{{ m.label }}</span></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="case-layout">
+        <div class="case-body prose">
+            {{ content | safe }}
+        </div>
+        <aside class="case-aside">
+            {% if technologies %}
+            <h2>Stack and skills</h2>
+            <div class="project-technologies">
+                {% for tech in technologies %}<span class="tech-badge">{{ tech }}</span>{% endfor %}
+            </div>
+            {% endif %}
+            {% if links %}
+            <h2>Links</h2>
+            <ul class="aside-links">
+                {% for l in links %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }} ↗</a></li>{% endfor %}
+            </ul>
+            {% endif %}
+        </aside>
+    </div>
+</article>

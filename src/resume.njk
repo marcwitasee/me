@@ -1,0 +1,94 @@
+---
+layout: base.njk
+title: Resume
+description: Resume of Marc Richardson, technical project manager for AI and cloud infrastructure deployment.
+permalink: /resume/
+---
+
+<section class="container section narrow resume">
+    <header class="page-header resume-header">
+        <div>
+            <h1>Resume</h1>
+            <p>{{ site.headline }} · {{ site.location }} · <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+        </div>
+        <a class="btn btn-primary" href="{{ '/assets/resume.pdf' | url }}">Download PDF</a>
+    </header>
+
+    <h2>Summary</h2>
+    <p>Technical project management professional with 11+ years of experience leading customer-facing platform deployments, technical onboarding and cross-functional execution across cloud infrastructure and AI-adjacent products. Strong track record of turning complex technical work into adoption, operational improvements and stakeholder alignment.</p>
+
+    <h2>Experience</h2>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>Independent AI Deployment Projects</h3>
+            <span>09/2026 – present</span>
+        </div>
+        <ul>
+            <li>Benchmarked frontier and open models for support-ticket triage on Fireworks AI and the Anthropic API. GPT-OSS 120B matched Claude Opus 5.5 at 34–45x lower cost, and a 9B model tied it at 4–7x lower latency. Modeled serverless vs dedicated-GPU break-even and ran a LoRA fine-tune. <a href="{{ '/work/llm-ticket-triage/' | url }}">Case study</a></li>
+            <li>Fine-tuned Qwen 3.5 9B on 73k engine-labeled chess positions. Legal moves doubled (36% to 71%) but best-move accuracy stayed at 3%, showing fine-tuning taught format, not reasoning. <a href="{{ '/work/llm-chess-finetune/' | url }}">Case study</a></li>
+        </ul>
+    </div>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>Sr. Technical Project Manager, Cloud Infrastructure · Chameleon Cloud, University of Chicago</h3>
+            <span>10/2023 – 08/2026</span>
+        </div>
+        <p>Led operations and strategic delivery for a federally funded cloud platform with $14M in active funding, supporting 15,000+ users across 1,300+ accounts and coordinating new feature development for 60+ partners.</p>
+        <ul>
+            <li>Added $2.5M in new funding for an AI platform feature by leading a documentation pilot using vector search and RAG (Ollama), which also contributed to a peer-reviewed publication at a top HPC conference.</li>
+            <li>Cut customer onboarding cycle time by ~40% through workflow automation and process redesign.</li>
+            <li>Launched a quarterly webinar series (14+ presented) and a monthly newsletter to drive AI engagement and feature adoption.</li>
+            <li>Reduced support requests by 15% by redesigning documentation and launching customer feedback loops.</li>
+            <li>Secured and maintained 5 grants totaling $14M through quarterly executive reviews with funders and 6 client proposals.</li>
+            <li>Aligned technical teams and external clients on milestones and success metrics with project plans covering scope, resourcing, timelines and KPIs.</li>
+        </ul>
+    </div>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>Technical Project Manager, Edge Computing · FLOTO, UChicago Data Science Institute</h3>
+            <span>10/2021 – 10/2023</span>
+        </div>
+        <p>Directed deployment and operations for an edge platform supporting over a dozen State Broadband Offices, scaling from 0 to 1,000+ devices nationally, building pipelines that processed 180M data points, coordinating 40+ partners and managing ~$3M in total funding.</p>
+        <ul>
+            <li>Procured 1,200+ computers for launch on a tight timeline ($200K budget), meeting supply deadlines and coming in under budget despite supply shortages.</li>
+            <li>Oversaw client engagement for rural and urban broadband assessments and scoped measurement needs for federal grants. Used field engineers as ambassadors to install 300 devices regionally.</li>
+            <li>Delivered a validated broadband quality dataset a month ahead of deadline, showing more than 50% of measured locations fell below federal thresholds. That evidence secured grant funding for regional fiber deployment and funding revisions totaling $20M.</li>
+            <li>Secured $1.5M in additional funding by building dozens of multi-institutional partnerships and co-authoring a successful grant proposal to scale the infrastructure 5x.</li>
+        </ul>
+    </div>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>Engagement Manager / Analyst · Criterion Economics, Washington, DC</h3>
+            <span>05/2014 – 03/2019</span>
+        </div>
+        <p>Led economic analysis for 15+ Fortune 500 clients in major litigation, coordinating economists, attorneys and analysts and preparing key testimony in federal cases ($500M+).</p>
+        <ul>
+            <li>Delivered favorable outcomes in 24+ cases, including the Apple v. Qualcomm dispute, by managing engagements from client intake to final delivery.</li>
+            <li>Contributed original research and analysis to 30+ expert reports and publications.</li>
+            <li>Promoted from Analyst to Senior Analyst to Engagement Manager.</li>
+        </ul>
+    </div>
+
+    <h2>Publications</h2>
+    <ul>
+        {% for pub in publications %}<li><strong>{{ pub.title }}</strong>, {{ pub.venue }}</li>{% endfor %}
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+        <li><strong>MS, Computational Analysis &amp; Public Policy</strong>, University of Chicago (2019–2021)</li>
+        <li><strong>BS, Economics and International Relations</strong>, William &amp; Mary</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Technical:</strong> Cloud infrastructure (AWS, GCP, OpenStack), Kubernetes, APIs, LLM deployment and fine-tuning (Fireworks AI, Anthropic), RAG and vector search, data pipelines, Python, SQL</li>
+        <li><strong>Program management:</strong> Multi-stakeholder coordination, technical onboarding, SDLC planning, process mapping, cross-functional leadership</li>
+        <li><strong>Tools:</strong> Jira, Confluence, Grafana, GitHub, Google Analytics</li>
+        <li><strong>Languages:</strong> English (native), Spanish (proficient)</li>
+    </ul>
+</section>
