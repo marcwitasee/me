@@ -14,7 +14,7 @@
     "description": "Contributing to data analytical software for predicting water levels near coastal communities",
     "image": "/images/hohonucdac.png",
     "imageAlt": "Screenshot of a blog post",
-    "projectUrl": "https://cdac.uchicago.edu/news/new-clinic-leverages-data-science-for-social-and-environmental-causes/",
+    "projectUrl": "https://datascience.uchicago.edu/news/new-clinic-leverages-data-science-for-social-and-environmental-causes/",
     "technologies": ["Python", "Machine Learning", "Environmental Science", "Data Analysis"],
     "date": "2023-10-01",
     "featured": true
