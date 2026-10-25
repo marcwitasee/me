@@ -3,7 +3,14 @@
     "title": "The Cost of Operationalizing ML at Scale",
     "venue": "SC'25 (International Conference for High Performance Computing, Networking, Storage, and Analysis)",
     "year": 2025,
-    "summary": "Evaluates the cloud cost of deploying and operating machine learning systems at scale.",
+    "summary": "From FOUNT, a project I managed that created interactive educational materials for research computing platforms.",
+    "url": ""
+  },
+  {
+    "title": "Chameleon Concierge: Retrieval-Augmented Generation (RAG) To Enhance Open Testbed Documentation",
+    "venue": "SC'25 poster",
+    "year": 2025,
+    "summary": "Poster on the RAG documentation assistant I scoped and supervised, co-authored with the summer student who built the first prototype.",
     "url": ""
   },
   {

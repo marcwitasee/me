@@ -34,8 +34,8 @@ I led operations and strategic delivery for the platform. I was the technical ow
 - **Rebuilt the documentation and feedback loops.** Redesigned docs and new customer feedback channels cut support requests by 15%.
 - **Ran the funder relationship like account management.** I delivered quarterly executive reviews on platform performance and outcomes, and wrote 6 proposals. That work kept 5 grants totaling $14M active.
 - **Kept partners aligned.** I built project plans covering scope, resourcing, timelines and KPI frameworks so technical teams and 60+ external partners agreed on milestones and success metrics.
-- **Led an AI pilot** that added a RAG-based documentation assistant to the platform and brought in $2.5M in new funding. See the [AI docs assistant case study](../chameleon-ai-docs/).
+- **Led an AI pilot** that added a RAG-based documentation assistant to the platform and helped make the case for a new $2.5M NSF grant for agentic AI workflows. See the [Chameleon Concierge case study](../chameleon-ai-docs/).
 
 ## Results
 
-All 5 grants stayed active, new users got productive about 40% faster, and support requests fell 15%. I also co-authored *The Cost of Operationalizing ML at Scale* (SC'25), which evaluates the cloud cost of deploying and operating ML systems.
+All 5 grants stayed active, new users got productive about 40% faster, and support requests fell 15%.
