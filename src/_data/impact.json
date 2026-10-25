@@ -1,7 +1,22 @@
 [
-  { "value": "$14M", "label": "in federal grants kept renewed through quarterly executive reviews" },
-  { "value": "15,000+", "label": "users across 1,300+ accounts on a research cloud platform" },
-  { "value": "1,000+", "label": "edge devices deployed nationally, from zero" },
-  { "value": "180M", "label": "data points processed by broadband measurement pipelines" },
-  { "value": "~40%", "label": "faster customer onboarding after workflow redesign" }
+  {
+    "value": "$14M",
+    "label": "in federal grants kept renewed through quarterly executive reviews"
+  },
+  {
+    "value": "15,000+",
+    "label": "users across 1,300+ accounts on a research cloud platform"
+  },
+  {
+    "value": "1,000+",
+    "label": "edge devices deployed nationally, from zero"
+  },
+  {
+    "value": "180M",
+    "label": "data points processed by broadband measurement pipelines"
+  },
+  {
+    "value": "1,200",
+    "label": "publications traced to Chameleon through a bibliometric analysis I led"
+  }
 ]

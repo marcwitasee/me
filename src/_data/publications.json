@@ -1,5 +1,12 @@
 [
   {
+    "title": "Practical Evaluation Methods for Scientific Instruments",
+    "venue": "PEARC '26 (Practice and Experience in Advanced Research Computing)",
+    "year": 2026,
+    "summary": "Evaluation methods for experimental cyberinfrastructure, drawn from 10 years of Chameleon operations. I led the publications analysis, combining Google Scholar, Scopus and Semantic Scholar with user reports to trace about 1,200 publications to the platform, and managed the submission. With K. Keahey, P. Marshall, M. Powers, M. Sherman and D. Stanzione.",
+    "url": ""
+  },
+  {
     "title": "The Cost of Operationalizing ML at Scale",
     "venue": "SC'25 (International Conference for High Performance Computing, Networking, Storage, and Analysis)",
     "year": 2025,
