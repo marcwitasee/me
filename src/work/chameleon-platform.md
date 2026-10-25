@@ -8,10 +8,10 @@ role: Sr. Technical Project Manager, Cloud Infrastructure
 dates: "Oct 2023 – Aug 2026"
 order: 3
 featured: true
-highlight: "$14M in grants kept renewed; ~1,200 publications traced to the platform."
+highlight: "Part of a $14M grant portfolio; ~1,200 publications traced to the platform."
 technologies: ["Cloud infrastructure", "OpenStack", "Kubernetes", "AWS", "GCP", "Customer onboarding", "Program management"]
 metrics:
-  - { value: "$14M", label: "across 5 grants, renewed through quarterly executive reviews" }
+  - { value: "$14M", label: "grant portfolio across Chameleon and its sister programs" }
   - { value: "15,000+", label: "users across 1,300+ accounts" }
   - { value: "1,200", label: "publications traced to the platform (PEARC'26)" }
   - { value: "~80", label: "allocation, PI-status and support requests reviewed each month" }
@@ -31,12 +31,12 @@ I led operations and strategic delivery for the platform. I was the technical ow
 
 - **Measured the platform's impact.** I owned the publications analysis for our PEARC'26 paper on evaluating scientific instruments. I combined Google Scholar, Scopus and Semantic Scholar with user reporting to build verifiable publication counts, which traced about 1,200 publications to Chameleon. I also managed the paper's submission.
 - **Ran day-to-day operations.** Each month I reviewed about 50 new allocation requests and 20 requests for "PI status", which unlocks extra platform permissions, along with publication submissions and related support tickets.
-- **Drove adoption.** I launched a quarterly webinar series (14+ sessions) and a monthly newsletter to help users adopt new features, including the platform's AI capabilities.
+- **Drove adoption through outreach.** I launched a quarterly webinar series (14+ sessions) and a monthly newsletter, planned user meetings and featured-user talks, and presented Chameleon at conferences and to research and student communities. Outreach pushes coincided with faster user growth, and they regularly surfaced partnership leads and feature requests that I brought back to the engineering team.
 - **Owned the documentation and blog,** and built feedback channels so user questions shaped what we wrote next.
-- **Ran the funder relationship like account management.** I delivered quarterly executive reviews on platform performance and outcomes, and wrote 6 proposals. That work kept 5 grants totaling $14M active.
+- **Ran the funder relationship like account management.** I met quarterly with the NSF program officer for each project to present project health, KPIs, insights and impact stories they could use in their own advocacy. I also wrote the annual NSF reports covering accomplishments, partnerships, deliverables, risks and delays, and plans for the year ahead. Across Chameleon, FLOTO, FOUNT, REPETO and related awards, that portfolio totaled about $14M.
 - **Kept partners aligned.** I built project plans covering scope, resourcing, timelines and KPI frameworks so technical teams and 60+ external partners agreed on milestones and success metrics.
 - **Led an AI pilot** that added a RAG-based documentation assistant to the platform and helped make the case for a new $2.5M NSF grant for agentic AI workflows. See the [Chameleon Concierge case study](../chameleon-ai-docs/).
 
 ## Results
 
-All 5 grants stayed active, the platform's research impact became measurable and publishable, and the team gained an AI pilot that fed directly into new funding.
+Funding stayed in place across the portfolio, the platform's research impact became measurable and publishable, and the team gained an AI pilot that fed directly into new funding.
