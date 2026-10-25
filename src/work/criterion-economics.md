@@ -6,7 +6,7 @@ type: professional
 org: Criterion Economics, Washington, DC
 role: Analyst → Senior Analyst → Engagement Manager
 dates: "May 2014 – Mar 2019"
-order: 6
+order: 7
 featured: true
 highlight: "Favorable outcomes in 24+ cases, including Apple v. Qualcomm."
 technologies: ["Economic modeling", "Damages analysis", "Data analysis", "Client management"]
