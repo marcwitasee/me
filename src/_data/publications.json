@@ -7,18 +7,25 @@
     "url": ""
   },
   {
-    "title": "The Cost of Operationalizing ML at Scale",
-    "venue": "SC'25 (International Conference for High Performance Computing, Networking, Storage, and Analysis)",
+    "title": "The Cost of Teaching Operational ML",
+    "venue": "EduHPC workshop at SC'25",
     "year": 2025,
-    "summary": "From FOUNT, a project I managed that created interactive educational materials for research computing platforms.",
-    "url": ""
+    "summary": "From FOUNT: a large MLOps course taught on Chameleon, the AWS and GCP cost of the same resources, and the tradeoffs of teaching on commercial versus research clouds.",
+    "url": "https://fount.cs.uchicago.edu/2025/09/04/announcing-the-cost-of-teaching-operational-ml-a-fount-showcase-at-sc25-eduhpc/"
   },
   {
     "title": "Chameleon Concierge: Retrieval-Augmented Generation (RAG) To Enhance Open Testbed Documentation",
     "venue": "SC'25 poster",
     "year": 2025,
-    "summary": "Poster on the RAG documentation assistant I scoped and supervised, co-authored with the summer student who built the first prototype.",
+    "summary": "Poster on Chameleon Concierge, the RAG documentation assistant I scoped and supervised, co-authored with the summer student who built the first prototype.",
     "url": ""
+  },
+  {
+    "title": "Summer of Reproducibility: Building Global Capacity for Practical Reproducibility through Hands-On Mentorship",
+    "venue": "ACM Conference on Reproducibility and Replicability (ACM REP '25)",
+    "year": 2025,
+    "summary": "On REPETO's mentorship program, which paired 55+ students with 60+ mentors on reproducibility challenges. With S. Lieggi, F. Fund and K. Keahey.",
+    "url": "https://nimbusproject.org/wp-content/uploads/sites/116/2025/08/ACM_REP___Summer_of_Reproducibility__Building_Global_Capacity_for_Practical_Reproducibility_through_Hands_On_Mentorship-1.pdf"
   },
   {
     "title": "How Wi-Fi Bottlenecks Affect Home Access Networks",
