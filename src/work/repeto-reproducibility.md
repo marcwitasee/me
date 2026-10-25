@@ -17,6 +17,7 @@ metrics:
 links:
   - { label: "REPETO", url: "https://repeto.cs.uchicago.edu" }
   - { label: "Workshop report (Zenodo)", url: "https://zenodo.org/records/15306610" }
+  - { label: "Workshop report (arXiv)", url: "https://arxiv.org/abs/2505.01671" }
   - { label: "Summer of Reproducibility paper (ACM REP '25)", url: "https://nimbusproject.org/wp-content/uploads/sites/116/2025/08/ACM_REP___Summer_of_Reproducibility__Building_Global_Capacity_for_Practical_Reproducibility_through_Hands_On_Mentorship-1.pdf" }
 ---
 
@@ -30,7 +31,7 @@ I managed the program alongside my work on Chameleon. I coordinated activities, 
 
 ## What I did
 
-- **Ran a community workshop on practical reproducibility in HPC.** It produced the report *Challenges of Practical Reproducibility for Systems and HPC Computer Science* (2025), which sets out best practices.
+- **Ran a community workshop on practical reproducibility in HPC.** It produced the report *Challenges of Practical Reproducibility for Systems and HPC Computer Science* (2025), which sets out best practices. I co-authored it as second author.
 - **Taught at major conferences.** We ran tutorials for artifact evaluation committees and participants, the people who check whether published results can be reproduced.
 - **Engaged students** through reproducibility hackathons.
 - **Helped launch a Reproducibility Ambassadors program.** It sponsored students to attend conferences and talk with researchers about reproducibility and how open platforms like Chameleon make it practical.

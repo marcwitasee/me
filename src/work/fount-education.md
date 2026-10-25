@@ -13,7 +13,7 @@ technologies: ["Education", "Program evaluation", "Surveys", "Webinars", "Cloud 
 metrics:
   - { value: "~60", label: "educational tutorials (\"courselets\") built by the project team" }
   - { value: "~12", label: "topics, from storage and data processing to ML and AI" }
-  - { value: "2", label: "publications, including an SC'25 EduHPC paper on the cost of teaching operational ML" }
+  - { value: "3", label: "publications I co-authored, at SC'25 EduHPC, SIGCSE Virtual 2026 and on the National Data Platform" }
 links:
   - { label: "FOUNT", url: "https://fount.cs.uchicago.edu" }
   - { label: "SIGCSE Virtual 2026 experience report", url: "https://fount.cs.uchicago.edu/2026/07/09/fount-experience-report-accepted-to-sigcse-virtual-2026/" }
@@ -33,8 +33,8 @@ FOUNT had many PIs building and teaching content. I coordinated the project, hel
 - **Coordinated a multi-PI program.** I kept project activity, reporting and deliverables on track across institutions while the PIs built and taught their content.
 - **Helped evaluate what worked.** We measured the content's effectiveness through student surveys and feedback from classes using it on Chameleon.
 - **Produced a webinar series.** PIs presented their content, what they learned using it in class, and how others could reuse or extend it.
-- **Supported the project's publications.** One SC'25 EduHPC paper looked at a large MLOps course that used almost every part of Chameleon. It priced the same resources on AWS and GCP that the class used for free on Chameleon, and weighed commercial against research clouds for teaching. A second paper, an experience report accepted to SIGCSE Virtual 2026, covers four courses taught on Chameleon and the lessons for instructors.
+- **Supported the project's publications.** One SC'25 EduHPC paper looked at a large MLOps course that used almost every part of Chameleon. It priced the same resources on AWS and GCP that the class used for free on Chameleon, and weighed commercial against research clouds for teaching. A second paper, an experience report accepted to SIGCSE Virtual 2026, covers four courses taught on Chameleon and the lessons for instructors. A third brought FOUNT's courselets to the National Data Platform.
 
 ## Results
 
-The team produced about 60 tutorials on about a dozen topics, published on Chameleon's Trovi repository for anyone to reuse, along with evaluation evidence from real classrooms and two publications.
+The team produced about 60 tutorials on about a dozen topics, published on Chameleon's Trovi repository for anyone to reuse, along with evaluation evidence from real classrooms and three publications.

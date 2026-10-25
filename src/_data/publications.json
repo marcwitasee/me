@@ -15,16 +15,16 @@
   },
   {
     "title": "The Cost of Teaching Operational ML",
-    "venue": "EduHPC workshop at SC'25",
+    "venue": "Proceedings of the SC'25 Workshops (EduHPC)",
     "year": 2025,
-    "summary": "From FOUNT: a large MLOps course taught on Chameleon, the AWS and GCP cost of the same resources, and the tradeoffs of teaching on commercial versus research clouds.",
+    "summary": "From FOUNT: a large MLOps course taught on Chameleon, the AWS and GCP cost of the same resources, and the tradeoffs of teaching on commercial versus research clouds. With F. Fund, K. Keahey, C. Hammock, M. Powers and M. Sherman.",
     "url": "https://fount.cs.uchicago.edu/2025/09/04/announcing-the-cost-of-teaching-operational-ml-a-fount-showcase-at-sc25-eduhpc/"
   },
   {
     "title": "Chameleon Concierge: Retrieval-Augmented Generation (RAG) To Enhance Open Testbed Documentation",
     "venue": "SC'25 poster",
     "year": 2025,
-    "summary": "Poster on Chameleon Concierge, the RAG documentation assistant I scoped and supervised, co-authored with the summer student who built the first prototype.",
+    "summary": "Poster on Chameleon Concierge, the RAG documentation assistant I scoped and supervised. With S. A. Zada, the summer student who built the first prototype, and K. Keahey.",
     "url": ""
   },
   {
@@ -35,17 +35,45 @@
     "url": "https://nimbusproject.org/wp-content/uploads/sites/116/2025/08/ACM_REP___Summer_of_Reproducibility__Building_Global_Capacity_for_Practical_Reproducibility_through_Hands_On_Mentorship-1.pdf"
   },
   {
-    "title": "How Wi-Fi Bottlenecks Affect Home Access Networks",
-    "venue": "ACM Internet Measurement Conference (IMC '24)",
-    "year": 2024,
-    "summary": "Documents home network performance and where in-home Wi-Fi, rather than the broadband connection, becomes the bottleneck.",
+    "title": "FOUNT Courselets on the National Data Platform",
+    "venue": "ACM, 2025",
+    "year": 2025,
+    "summary": "Bringing FOUNT's educational courselets to the National Data Platform. With P. Ramonetti, M. Floca and K. Keahey.",
     "url": ""
   },
   {
-    "title": "Scaling Edge Computing: Lessons from Real Device Deployments",
+    "title": "Report on Challenges of Practical Reproducibility for Systems and HPC Computer Science",
+    "venue": "arXiv preprint (2025)",
+    "year": 2025,
+    "summary": "The REPETO community workshop report: the obstacles to reproducing systems and HPC experiments, and recommended practices. I co-authored it as second author, with K. Keahey, R. Tolosana Calasanz, S. Hunold, J. Lofstead, T. Malik and C. Perez.",
+    "url": "https://arxiv.org/abs/2505.01671"
+  },
+  {
+    "title": "A Longitudinal Study of the Prevalence of WiFi Bottlenecks in Home Access Networks",
+    "venue": "ACM Internet Measurement Conference (IMC '24)",
+    "year": 2024,
+    "summary": "Uses data from our resident-hosted measurement devices to show how often in-home Wi-Fi, rather than the broadband connection, limits home internet performance. With R. Sharma and N. Feamster.",
+    "url": "https://arxiv.org/abs/2311.05499"
+  },
+  {
+    "title": "Discovery Testbed: An Observational Instrument for Broadband Research",
     "venue": "IEEE International Conference on e-Science (e-Science '23)",
     "year": 2023,
-    "summary": "Describes the FLOTO architecture and what it took to deploy and operate a national fleet of measurement devices.",
+    "summary": "Describes the testbed behind FLOTO: a national fleet of measurement devices that researchers and communities can use to study broadband performance. With K. Keahey, N. Feamster, G. Martins, M. Powers, A. Schrubbe and M. Sherman.",
     "url": ""
+  },
+  {
+    "title": "Benchmarks or Equity? A New Approach to Measuring Internet Performance",
+    "venue": "SSRN working paper (2022)",
+    "year": 2022,
+    "summary": "From the Internet Equity Initiative: why measuring internet performance against fixed speed benchmarks misses inequities, and an alternative approach. With R. Sharma, T. Mangla, J. Saxon, N. Feamster and N. Marwell.",
+    "url": ""
+  },
+  {
+    "title": "Best Practices for Collecting Speed Test Data",
+    "venue": "SSRN working paper (2022)",
+    "year": 2022,
+    "summary": "Practical guidance on collecting and interpreting speed test data for broadband policy. With K. MacMillan, T. Mangla and N. Feamster.",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4189044"
   }
 ]

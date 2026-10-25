@@ -40,7 +40,7 @@ I managed the project's operations, field program and data sharing. When our lea
 
 ## Results
 
-The pilot showed that resident-hosted measurement works, and its data fed research including our IMC '24 paper on Wi-Fi bottlenecks. Findings on Chicago's digital divide drew coverage from UChicago News and Fox 32. The proof of concept and operations playbook became the basis for the NSF proposal that funded [FLOTO](../floto-rollout/).
+The pilot showed that resident-hosted measurement works, and its data fed research I co-authored, including an IMC '24 paper on Wi-Fi bottlenecks and two 2022 working papers on speed test best practices and measuring internet equity. Findings on Chicago's digital divide drew coverage from UChicago News and Fox 32. The proof of concept and operations playbook became the basis for the NSF proposal that funded [FLOTO](../floto-rollout/).
 
 ## What I learned
 

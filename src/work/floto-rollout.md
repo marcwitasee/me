@@ -42,7 +42,7 @@ I ran deployment and operations. I owned the hardware supply chain, the engageme
 - **Michigan:** about 15 devices across a small island produced data that triggered an FCC reassessment of the community's broadband, a step toward more infrastructure funding.
 - **Illinois:** the Marion County data backed a community-owned provider's grant application to build out fiber in the region.
 - **Across engagements:** more than half of measured locations fell below federal broadband thresholds, evidence that those homes qualified as unserved or underserved.
-- **Scale:** the platform grew from zero to more than 1,000 devices serving over a dozen State Broadband Offices. Its architecture is described in an e-Science '23 paper.
+- **Scale:** the platform grew from zero to more than 1,000 devices serving over a dozen State Broadband Offices. Its design is described in our e-Science '23 paper, *Discovery Testbed: An Observational Instrument for Broadband Research*.
 
 ## What I learned
 
