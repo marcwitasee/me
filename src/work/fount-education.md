@@ -16,6 +16,7 @@ metrics:
   - { value: "2", label: "publications, including an SC'25 EduHPC paper on the cost of teaching operational ML" }
 links:
   - { label: "FOUNT", url: "https://fount.cs.uchicago.edu" }
+  - { label: "SIGCSE Virtual 2026 experience report", url: "https://fount.cs.uchicago.edu/2026/07/09/fount-experience-report-accepted-to-sigcse-virtual-2026/" }
   - { label: "SC'25 EduHPC announcement", url: "https://fount.cs.uchicago.edu/2025/09/04/announcing-the-cost-of-teaching-operational-ml-a-fount-showcase-at-sc25-eduhpc/" }
 ---
 
@@ -32,7 +33,7 @@ FOUNT had many PIs building and teaching content. I coordinated the project, hel
 - **Coordinated a multi-PI program.** I kept project activity, reporting and deliverables on track across institutions while the PIs built and taught their content.
 - **Helped evaluate what worked.** We measured the content's effectiveness through student surveys and feedback from classes using it on Chameleon.
 - **Produced a webinar series.** PIs presented their content, what they learned using it in class, and how others could reuse or extend it.
-- **Supported the project's publications.** One SC'25 EduHPC paper looked at a large MLOps course that used almost every part of Chameleon. It priced the same resources on AWS and GCP that the class used for free on Chameleon, and weighed commercial against research clouds for teaching. A second paper was an experience report on the project and its lessons.
+- **Supported the project's publications.** One SC'25 EduHPC paper looked at a large MLOps course that used almost every part of Chameleon. It priced the same resources on AWS and GCP that the class used for free on Chameleon, and weighed commercial against research clouds for teaching. A second paper, an experience report accepted to SIGCSE Virtual 2026, covers four courses taught on Chameleon and the lessons for instructors.
 
 ## Results
 

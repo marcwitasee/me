@@ -1,5 +1,12 @@
 [
   {
+    "title": "Leveraging Chameleon Cloud for Hands-On Learning in Systems and Data Courses: An Experience Report",
+    "venue": "SIGCSE Virtual 2026 (to be presented November 2026)",
+    "year": 2026,
+    "summary": "FOUNT's experience report on four courses in storage systems, data analysis and ML operations taught on Chameleon, with lessons for instructors. With F. Fund, E. Zadok, T. Estro, D. Koop and K. Keahey.",
+    "url": "https://fount.cs.uchicago.edu/2026/07/09/fount-experience-report-accepted-to-sigcse-virtual-2026/"
+  },
+  {
     "title": "Practical Evaluation Methods for Scientific Instruments",
     "venue": "PEARC '26 (Practice and Experience in Advanced Research Computing)",
     "year": 2026,
