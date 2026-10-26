@@ -64,6 +64,16 @@ The composite of 89.3, up from 82 over the month, puts the real gaps on the tabl
 - **Name the biggest risk.** Quality could slip as the model meets new catalogs and policies, just as leadership comes to expect flagship results. The mitigation is quality gates at each milestone, a 24-hour rollback to human-only routing, and launching on a narrow set of ticket types first.
 - **Fix what doesn't scale before scaling.** A manual catalog sync caused an early-August incident, and that kind of manual work multiplies with every brand. Automating the catalog and policy pipeline has to come before going past two brands.
 
+## The pushback, and how I'd answer it now
+
+The expansion plan drew three hard questions when I presented it. My answers in the room weren't as strong as they should have been, so here is how I'd answer them now.
+
+**"Why only one brand?"** Because the first expansion is a test of the architecture, not just a rollout. Launching one brand isolates what we're testing: whether a model tuned for the flagship holds up with a new catalog, new policies and a new voice, given only a new prompt and RAG index. With several brands live at once, a drop in quality could come from any of them, and we couldn't tell which. The operations weren't ready for more either. Catalog and policy updates were still manual, one had already caused an incident, and the internal support load was estimated to nearly double with a second brand until that pipeline was automated.
+
+**"Why the most similar brand, not the most different one?"** This is a real tradeoff, and the critique is fair: a pass on the easiest brand proves less. My answer is to split the two goals. The first live launch should be the brand most likely to succeed, because a failed first expansion sets the whole program back with the customer. It also produces the playbook, baselines and gates for every brand after it. Alongside it, I'd stress-test the most different brand offline, replaying its past support tickets through the shared model to see where it breaks without putting customers at risk. I'd change my mind if the similar brand were too small to prove anything, if most of the value or the executive sponsor sat with the complex brand, or if the offline replay showed the model already handled it well.
+
+**"The CEO wants all four brands now. Why wait?"** I'd start by treating that as good news and asking what's behind the deadline, such as a board commitment, so we can design for it. Then I'd make the risk concrete in the customer's terms. The cost isn't the issue, since the whole bill was about $1,200 a month. Quality is. The likeliest failure is the bot getting a return policy wrong or sounding off-brand. Across four brands at the start of the retail holiday peak, that means four sets of unhappy customers and four operations teams that stop trusting the system. Then I'd offer a path rather than a no: one brand live right away with a 30-day go/no-go, the other three prepared in parallel (catalogs, policies, baselines and replay testing), and each launched within weeks once the first clears its gates. Realistically, that's two brands live this quarter and all five early next quarter, with evidence at every step.
+
 ## What I'd change
 
 Going back over the data afterward, I'd sharpen two points in the briefing:
