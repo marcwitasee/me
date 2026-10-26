@@ -14,6 +14,16 @@
 
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    {% if isProduction and site.googleAnalyticsId %}
+    <!-- Google Analytics (GA4): set googleAnalyticsId in src/_data/site.json -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.googleAnalyticsId }}');
+    </script>
+    {% endif %}
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>

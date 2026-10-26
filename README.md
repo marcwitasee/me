@@ -197,3 +197,7 @@ Feel free to fork this repository and customize it for your own portfolio!
 ## License
 
 This project is open source and available under the MIT License.
+
+## Analytics
+
+Google Analytics (GA4) loads only in production builds, and only when `googleAnalyticsId` in `src/_data/site.json` is set to a measurement ID (`G-XXXXXXXXXX`). Leave it empty to turn analytics off.

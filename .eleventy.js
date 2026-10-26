@@ -5,6 +5,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  // Lets templates tell production builds apart (analytics only loads in production)
+  eleventyConfig.addGlobalData("isProduction", process.env.ELEVENTY_ENV === 'production');
+
   // Add date formatting filter
   eleventyConfig.addFilter("dateDisplay", (dateString) => {
     const date = new Date(dateString);
