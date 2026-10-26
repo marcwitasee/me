@@ -51,3 +51,7 @@ Fine-tuning made things worse. The structured prompt lifted Qwen from 18 to 25, 
 ## Platform lessons I hit firsthand
 
 GPT-OSS can't be fine-tuned on Fireworks, so I switched to Qwen. Qwen isn't serverless, so the base and fine-tuned models each needed their own dedicated deployment. Reasoning models returned empty answers until I turned reasoning off or raised the token budget.
+
+## What I'd test next
+
+**A production-style serving test.** Put the same triage task under load and measure throughput, tail latency and cost with many requests at once, comparing serverless with a dedicated deployment. A per-request benchmark can't answer the question a customer asks before launch: what happens at peak traffic?

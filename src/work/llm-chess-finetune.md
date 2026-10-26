@@ -44,3 +44,8 @@ Only a frontier-class open model matched Claude. Ember-1 tied Claude Opus 5.5 (1
 - **Fine-tune for format, not for reasoning.** Training on answer-only data teaches the shape of the output. It doesn't teach the search an engine does, and it can remove reasoning a model already had.
 - **A lower price per token doesn't mean a cheaper answer.** A model that reasons 4x longer can cost more per task than a pricier one.
 - **Data details decide the result.** Notation quirks and duplicate rows would have quietly corrupted both training and scoring.
+
+## What I'd test next
+
+- **Reinforcement fine-tuning.** Reward the model for choosing engine-approved moves, so it keeps its reasoning instead of losing it the way answer-only training did. This is the real test of whether training can teach judgment. It needs a bigger GPU budget than this project used.
+- **Make the open frontier model cheaper.** Distill Ember-1's reasoning into a small model, or cap its reasoning tokens, and measure how much quality survives at Claude's price. That's the classic deployment trade-off.
