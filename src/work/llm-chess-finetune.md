@@ -4,7 +4,7 @@ title: "Where fine-tuning stops helping: teaching a small model chess"
 summary: "Fine-tuned Qwen 3.5 9B on 73,000 engine-labeled chess positions to test whether clean labels can teach a small model to reason, and compared it with Claude Opus 5.5 and open frontier models."
 type: independent
 org: Independent project
-role: Sole author
+role: Designed and ran it, building with an AI coding assistant
 dates: "Oct 2026"
 order: 2
 featured: true
@@ -17,6 +17,10 @@ metrics:
 links:
   - { label: "Code and full write-up on GitHub", url: "https://github.com/marcwitasee/llm-deployment-benchmarks/tree/main/02-chess" }
 ---
+
+## Why chess
+
+I love the game, and it's a great window into what LLMs can and can't do. Models now play each other in public matches, and you can watch how much their play depends on reasoning.
 
 ## The problem
 

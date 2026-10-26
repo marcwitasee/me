@@ -4,7 +4,7 @@ title: "Do you need a frontier model to triage support tickets?"
 summary: "A benchmark of Claude Opus 5.5, GPT-OSS 120B and a fine-tuned Qwen 3.5 9B on routing and prioritizing support tickets, measured on accuracy, latency and cost per task."
 type: independent
 org: Independent project
-role: Sole author
+role: Designed and ran it, building with an AI coding assistant
 dates: "Sep 2026 – Oct 2026"
 order: 1
 featured: true
@@ -17,6 +17,10 @@ metrics:
 links:
   - { label: "Code and full write-up on GitHub", url: "https://github.com/marcwitasee/llm-deployment-benchmarks/tree/main/01-ticket-triage" }
 ---
+
+## Why I built this
+
+While interviewing for AI deployment roles, I wanted hands-on experience with the question those teams answer every day: when can an open model replace a closed one? I designed the experiments and made the calls on data, prompts and serving. I wrote the code with an AI coding assistant.
 
 ## The problem
 
@@ -36,6 +40,8 @@ With a structured prompt, every model landed at about 25 of 100 tickets with bot
 Fine-tuning made things worse. The structured prompt lifted Qwen from 18 to 25, but the fine-tune dropped it to 11 because it learned the label skew in the training data (42% "high" urgency vs 34% in the test set).
 
 ## What I'd tell a customer
+
+- **Open models can match closed ones, but check the whole bill.** On a simple task like this, a well-prompted open model is just as accurate and much faster and cheaper. On harder tasks, an open model may match quality only by reasoning longer, which erodes the cost and speed advantage (see the [chess project](../llm-chess-finetune/)).
 
 - **Price per token isn't price per task.** Reasoning tokens and prompt length drive the bill. The structured prompt used about 5x the input tokens, and GPT-OSS was still far cheaper.
 - **Prompt before you train, and check label quality before selling a fine-tune.**
