@@ -6,7 +6,7 @@ type: independent
 org: Independent project
 role: Designed and ran it, building with an AI coding assistant
 dates: "Sep 2026 – Oct 2026"
-order: 1
+order: 2
 featured: true
 highlight: "GPT-OSS 120B matched Claude Opus 5.5 at 34–45x lower cost."
 technologies: ["Fireworks AI", "Anthropic API", "LoRA fine-tuning", "Prompt engineering", "Evals", "Python"]

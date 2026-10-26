@@ -6,7 +6,7 @@ type: professional
 org: REPETO, University of Chicago
 role: Program manager
 dates: "2023 – 2026"
-order: 7
+order: 8
 featured: false
 highlight: "~140 new reproducible artifacts and 1,000+ researchers reached."
 technologies: ["Community building", "Event programming", "Reproducibility", "Trovi", "Program management"]

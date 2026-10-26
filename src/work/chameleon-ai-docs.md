@@ -6,7 +6,7 @@ type: professional
 org: Chameleon Cloud, University of Chicago
 role: Pilot lead and developer
 dates: "Jul 2025 – Jul 2026"
-order: 4
+order: 5
 featured: true
 highlight: "Took a summer prototype to a production RAG app with reranking, evals and user feedback."
 technologies: ["RAG", "Llama 3.3 70B", "FAISS", "BGE embeddings + reranker", "Streamlit", "Docker", "Evals", "AI-assisted development"]

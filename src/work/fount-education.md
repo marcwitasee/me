@@ -6,7 +6,7 @@ type: professional
 org: FOUNT, University of Chicago
 role: Program manager
 dates: "2023 – 2026"
-order: 8
+order: 9
 featured: false
 highlight: "~60 tutorials across a dozen topics, evaluated in real classrooms."
 technologies: ["Education", "Program evaluation", "Surveys", "Webinars", "Cloud cost analysis", "Program management"]

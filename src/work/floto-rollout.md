@@ -6,7 +6,7 @@ type: professional
 org: FLOTO, University of Chicago
 role: Technical Project Manager, Edge Computing
 dates: "2022 – 2026"
-order: 5
+order: 6
 featured: true
 highlight: "0 to 1,000+ devices; data used in FCC challenges and fiber grant applications."
 technologies: ["Edge computing", "Raspberry Pi", "OpenBalena", "Kubernetes", "Data pipelines", "Procurement", "Stakeholder engagement"]

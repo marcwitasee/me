@@ -6,7 +6,7 @@ type: independent
 org: Independent project
 role: Designed and ran it, building with an AI coding assistant
 dates: "Oct 2026"
-order: 2
+order: 3
 featured: true
 highlight: "Fine-tuning doubled legal moves but never improved move quality."
 technologies: ["Fireworks AI", "LoRA fine-tuning", "Evals", "Data cleaning", "Python", "python-chess"]

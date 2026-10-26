@@ -460,3 +460,9 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
 }
+
+/* Case study figures and notes */
+.prose figure { margin: 28px 0; }
+.prose figure img { border: 1px solid var(--color-border); border-radius: var(--radius); background: #fff; }
+.prose figcaption { margin-top: 8px; font-size: 14px; color: var(--color-text-secondary); }
+.prose .note { padding: 14px 16px; border-left: 3px solid var(--color-independent); background: var(--color-bg-secondary); border-radius: 0 var(--radius) var(--radius) 0; }

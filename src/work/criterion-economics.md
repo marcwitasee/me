@@ -6,7 +6,7 @@ type: professional
 org: Criterion Economics, Washington, DC
 role: Analyst → Senior Analyst → Engagement Manager
 dates: "May 2014 – Mar 2019"
-order: 9
+order: 10
 featured: true
 highlight: "18 matters for clients including Qualcomm, Verizon and UPS."
 technologies: ["Economic modeling", "Damages and royalty analysis", "Data analysis", "Expert testimony", "Team coordination"]

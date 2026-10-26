@@ -6,7 +6,7 @@ type: professional
 org: Chameleon Cloud, University of Chicago
 role: Sr. Technical Project Manager, Cloud Infrastructure
 dates: "Oct 2023 – Aug 2026"
-order: 3
+order: 4
 featured: true
 highlight: "Part of an ~$18M, 6-grant portfolio; ~1,200 publications traced to the platform."
 technologies: ["Cloud infrastructure", "OpenStack", "Kubernetes", "AWS", "GCP", "Customer onboarding", "Program management"]

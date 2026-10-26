@@ -6,7 +6,7 @@ type: professional
 org: Internet Equity Initiative, University of Chicago (funded by data.org)
 role: Technical Project Manager
 dates: "2021 – 2022"
-order: 6
+order: 7
 featured: false
 highlight: "Chicago pilot with ~250 devices that led to the NSF-funded FLOTO platform."
 technologies: ["Raspberry Pi", "Python", "AWS S3", "Grafana", "Salt", "Field operations", "Open data"]
