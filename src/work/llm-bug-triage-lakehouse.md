@@ -37,9 +37,19 @@ Everything runs on Databricks Free Edition, in Unity Catalog:
 - **Gold:** opened, closed, open backlog and median days to close for each team, every week for two years. This feeds an AI/BI dashboard and a Genie agent that answers plain-English questions.
 - **AI evaluation:** a reusable SQL harness runs any model and prompt over fixed test sets through `ai_query()`, stores results in a table and logs every run to MLflow.
 
+<figure>
+  <img src="{{ '/images/bug-triage-dashboard.png' | url }}" alt="Databricks AI/BI dashboard with open backlog by team over time, closing rate by team, and bugs by status and severity" loading="lazy">
+  <figcaption>The support manager dashboard, built on the gold table: open backlog by team over two years, closing rate by team, and bugs by status and severity.</figcaption>
+</figure>
+
 ## How I tested the models
 
 Mozilla's own triagers already filed each bug under a component, so the right team is known. The model sees a bug's title and the start of its description and must name the team exactly. I built two routing test sets of 280 bugs each, with 20 per team so big teams don't dominate. I wrote the improved prompt by studying mistakes on the first set, so the second, untouched set is the fair test. A third set of 100 urgent and 100 non-urgent bugs tested urgency.
+
+<figure>
+  <img src="{{ '/images/bug-triage-mlflow.png' | url }}" alt="MLflow experiment listing routing and urgency runs with accuracy, blank answers, cost, false alarm and recall metrics" loading="lazy">
+  <figcaption>Every run logged to one MLflow experiment, so models, prompts and test sets can be compared on accuracy, blank answers, cost, recall and false alarms.</figcaption>
+</figure>
 
 ## Results
 
@@ -48,6 +58,11 @@ Mozilla's own triagers already filed each bug under a component, so the right te
 | **gpt-oss-120b** | 71% | **79%** | **$0.27** |
 | Llama 4 Maverick | 70% | 75% | $0.54 |
 | gpt-oss-20b | 66% | 73% | $0.15 |
+
+<figure>
+  <img src="{{ '/images/bug-triage-model-eval.png' | url }}" alt="Bar charts of routing accuracy by model and prompt version, and cost per 1,000 bugs by model" loading="lazy">
+  <figcaption>The model evaluation tab of the same dashboard: accuracy by model and prompt version (left) and cost per 1,000 bugs (right).</figcaption>
+</figure>
 
 - **The prompt mattered more than the model.** The targeted prompt added 5 to 7.5 points for every model, while going from the smallest model to the largest added about 6. It named the on-screen features each team owns and told the model to use the catch-all team only as a last resort.
 - **More context made things worse.** A third prompt pasted in Mozilla's descriptions of 195 components, eight times longer. It scored 69%, and the model more often ran out of output budget while reasoning, leaving 13 answers blank.
