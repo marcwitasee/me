@@ -3,7 +3,7 @@ title: "Coastal Water Level Prediction"
 summary: "Contributed to data analysis software that predicts water levels near coastal communities, through the UChicago Data Science Clinic."
 type: academic
 org: UChicago Data Science Clinic
-dates: "Oct 2023"
+dates: "2023"
 order: 21
 image: /images/hohonucdac.png
 imageAlt: "Screenshot of the UChicago Data Science Institute news post about the clinic"

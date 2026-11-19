@@ -3,7 +3,7 @@ title: "311 Service Call Tracker"
 summary: "Applied big data architecture principles to build a tracker for Chicago 311 service calls using AWS tools."
 type: academic
 org: University of Chicago (MPCS 53014)
-dates: "Dec 2023"
+dates: "2023"
 order: 20
 image: /images/311-app.png
 imageBlur: true

@@ -5,7 +5,7 @@ summary: "Five years building the economic analysis behind expert testimony in m
 type: professional
 org: Criterion Economics, Washington, DC
 role: Analyst → Senior Analyst → Engagement Manager
-dates: "May 2014 – Mar 2019"
+dates: "2014 – 2019"
 order: 11
 featured: true
 highlight: "18 matters for clients including Qualcomm, Verizon and UPS."
