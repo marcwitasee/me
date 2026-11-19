@@ -1,5 +1,12 @@
 [
   {
+    "role": "AI Training Expert",
+    "org": "micro1 (contract)",
+    "dates": "2026 – present",
+    "summary": "Training frontier AI models as a contracted domain expert: reviewing and scoring model outputs, writing feedback that improves model behavior, and building annotated evaluation datasets.",
+    "link": "/resume/"
+  },
+  {
     "role": "Independent AI Deployment Projects",
     "org": "Self-directed",
     "dates": "09/2026 – present",
@@ -19,6 +26,20 @@
     "dates": "10/2021 – 10/2023",
     "summary": "Took a national broadband measurement platform from 0 to 1,000+ devices for over a dozen State Broadband Offices.",
     "link": "/work/floto-rollout/"
+  },
+  {
+    "role": "Customer Success Associate",
+    "org": "Stae",
+    "dates": "2020 – 2021",
+    "summary": "Connected local-government systems and APIs to a civic data platform and built public dashboards, including Guilford County, NC's open budget and Long Beach, CA's federal housing reporting.",
+    "link": "/resume/"
+  },
+  {
+    "role": "Junior Web Developer",
+    "org": "Solutions Street Consulting",
+    "dates": "2020",
+    "summary": "Shipped front-end and back-end features for four client Ruby on Rails applications, and optimized database queries and refactored code.",
+    "link": "/resume/"
   },
   {
     "role": "MS, Computational Analysis & Public Policy",
