@@ -1,36 +1,57 @@
 [
   {
+    "role": "AI Training Expert",
+    "org": "micro1 (contract)",
+    "dates": "2026 – present",
+    "summary": "Training frontier AI models as a contracted domain expert: reviewing and scoring model outputs, writing feedback that improves model behavior, and building annotated evaluation datasets.",
+    "link": "/resume/"
+  },
+  {
     "role": "Independent AI Deployment Projects",
     "org": "Self-directed",
-    "dates": "09/2026 – present",
+    "dates": "2026 – present",
     "summary": "Benchmarking frontier and open models on Fireworks AI and the Anthropic API for accuracy, latency and cost, including LoRA fine-tunes and a Databricks lakehouse build, plus an account review and expansion case for a production AI support deployment.",
     "link": "/work/#independent"
   },
   {
     "role": "Sr. Technical Project Manager, Cloud Infrastructure",
     "org": "Chameleon Cloud, University of Chicago",
-    "dates": "10/2023 – 08/2026",
+    "dates": "2023 – 2026",
     "summary": "Ran operations and delivery for an NSF-funded cloud platform with 15,000+ users and 60+ partners, while managing the FLOTO, FOUNT and REPETO programs in parallel (about $18M across 6 grants).",
     "link": "/work/chameleon-platform/"
   },
   {
     "role": "Technical Project Manager, Edge Computing",
     "org": "FLOTO, UChicago Data Science Institute",
-    "dates": "10/2021 – 10/2023",
+    "dates": "2021 – 2023",
     "summary": "Took a national broadband measurement platform from 0 to 1,000+ devices for over a dozen State Broadband Offices.",
     "link": "/work/floto-rollout/"
   },
   {
+    "role": "Customer Success Associate",
+    "org": "Stae",
+    "dates": "2020 – 2021",
+    "summary": "Connected local-government systems and APIs to a civic data platform and built public dashboards, including Guilford County, NC's open budget and Long Beach, CA's federal housing reporting.",
+    "link": "/resume/"
+  },
+  {
+    "role": "Junior Web Developer",
+    "org": "Solutions Street Consulting",
+    "dates": "2020",
+    "summary": "Shipped front-end and back-end features for four client Ruby on Rails applications, and optimized database queries and refactored code.",
+    "link": "/resume/"
+  },
+  {
     "role": "MS, Computational Analysis & Public Policy",
     "org": "University of Chicago",
-    "dates": "09/2019 – 06/2021",
+    "dates": "2019 – 2021",
     "summary": "Data science, machine learning and cloud computing applied to public policy problems.",
     "link": "/work/#academic"
   },
   {
     "role": "Engagement Manager / Analyst",
     "org": "Criterion Economics",
-    "dates": "05/2014 – 03/2019",
+    "dates": "2014 – 2019",
     "summary": "Economic analysis behind expert testimony, including damages and royalty valuations, in 18 patent, commercial and regulatory matters for clients like Qualcomm, Verizon and UPS.",
     "link": "/work/criterion-economics/"
   }

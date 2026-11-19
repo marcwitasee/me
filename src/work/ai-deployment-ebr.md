@@ -5,7 +5,7 @@ summary: "A hypothetical account review for a retailer whose fine-tuned support 
 type: independent
 org: Case study (hypothetical scenario)
 role: Built it end to end, with an AI coding assistant
-dates: "Sep 2026"
+dates: "2026"
 order: 1
 featured: true
 highlight: "Two dashboards and an executive briefing from one dataset, each tuned to its audience."

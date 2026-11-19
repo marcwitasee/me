@@ -5,7 +5,7 @@ summary: "A benchmark of Claude Opus 5.5, GPT-OSS 120B and a fine-tuned Qwen 3.5
 type: independent
 org: Independent project
 role: Designed and ran it, building with an AI coding assistant
-dates: "Sep 2026 – Oct 2026"
+dates: "2026"
 order: 3
 featured: true
 highlight: "GPT-OSS 120B matched Claude Opus 5.5 at 34–45x lower cost."

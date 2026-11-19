@@ -5,7 +5,7 @@ summary: "Operations and strategic delivery for Chameleon, an NSF-funded cloud p
 type: professional
 org: Chameleon Cloud, University of Chicago
 role: Sr. Technical Project Manager, Cloud Infrastructure
-dates: "Oct 2023 – Aug 2026"
+dates: "2023 – 2026"
 order: 5
 featured: true
 highlight: "Part of an ~$18M, 6-grant portfolio; ~1,200 publications traced to the platform."

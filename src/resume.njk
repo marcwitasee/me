@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Resume
-description: Resume of Marc Richardson, technical project manager for AI and cloud infrastructure deployment.
+description: "Resume of Marc Richardson: AI and cloud infrastructure deployment, technical project management, and hands-on AI projects."
 permalink: /resume/
 ---
 
@@ -14,87 +14,151 @@ permalink: /resume/
         <a class="btn btn-primary" href="{{ '/assets/resume.pdf' | url }}">Download PDF</a>
     </header>
 
-    <h2>Summary</h2>
-    <p>Technical project management professional with 11+ years of experience leading customer-facing platform deployments, technical onboarding and cross-functional execution across cloud infrastructure and AI-adjacent products. Strong track record of turning complex technical work into adoption, operational improvements and stakeholder alignment.</p>
-
     <h2>Experience</h2>
 
     <div class="resume-job">
         <div class="resume-job-head">
-            <h3>Independent AI Deployment Projects</h3>
-            <span>09/2026 – present</span>
+            <h3>AI Training Expert · micro1 (virtual)</h3>
+            <span>2026 – present</span>
         </div>
         <ul>
-            <li>Built internal and customer-facing account health dashboards (Streamlit, Plotly) and a 7-slide executive briefing for a hypothetical production AI support deployment, with a target-based health score and a gated plan to expand to four more brands. <a href="{{ '/work/ai-deployment-ebr/' | url }}">Case study</a></li>
-            <li>Built a Databricks lakehouse (bronze, silver, gold, AI/BI dashboard, Genie) over 27,786 Firefox bugs and tested open models for triage with <code>ai_query()</code> and MLflow. gpt-oss-120b routed 79% of unseen bugs to the right of 14 teams for $0.27 per 1,000. <a href="{{ '/work/llm-bug-triage-lakehouse/' | url }}">Case study</a></li>
-            <li>Benchmarked frontier and open models for support-ticket triage on Fireworks AI and the Anthropic API. GPT-OSS 120B matched Claude Opus 5.5 at 34–45x lower cost, and a 9B model tied it at 4–7x lower latency. Modeled serverless vs dedicated-GPU break-even and ran a LoRA fine-tune. <a href="{{ '/work/llm-ticket-triage/' | url }}">Case study</a></li>
-            <li>Fine-tuned Qwen 3.5 9B on 73k engine-labeled chess positions. Legal moves doubled (36% to 71%) but best-move accuracy stayed at 3%, showing fine-tuning taught format, not reasoning. <a href="{{ '/work/llm-chess-finetune/' | url }}">Case study</a></li>
+            <li>Trained frontier AI models as a contracted domain expert by reviewing and scoring model outputs and writing the feedback used to improve model behavior.</li>
+            <li>Built annotated datasets for model evaluation by designing tasks, writing reference answers and labeling responses to consistent quality standards.</li>
         </ul>
     </div>
 
     <div class="resume-job">
         <div class="resume-job-head">
-            <h3>Sr. Technical Project Manager, Cloud Infrastructure · Chameleon Cloud, University of Chicago</h3>
-            <span>10/2023 – 08/2026</span>
+            <h3>Sr. Technical Project Manager · Chameleon Cloud, University of Chicago</h3>
+            <span>2023 – 2026</span>
         </div>
-        <p>Led operations and strategic delivery for a federally funded cloud platform, alongside the FLOTO, FOUNT and REPETO programs (about $18M across 6 grants), supporting 15,000+ users across 1,300+ accounts and coordinating new feature development for 60+ partners.</p>
         <ul>
-            <li>Pitched and built Chameleon Concierge, a RAG assistant over the platform docs (Llama 3.3 70B, FAISS, cross-encoder reranking). The pilot supported a new $2.5M NSF grant for agentic AI workflows and became an SC'25 poster.</li>
-            <li>Led the publication-impact analysis for a PEARC'26 paper, combining three bibliometric sources with user reports to trace about 1,200 publications to the platform.</li>
-            <li>Reviewed about 50 allocation requests and 20 PI-status requests a month as part of day-to-day platform operations.</li>
-            <li>Launched a quarterly webinar series (14+ presented) and a monthly newsletter to drive AI engagement and feature adoption.</li>
-            <li>Oversaw platform documentation and the blog, and built customer feedback loops.</li>
-            <li>Kept the grant portfolio funded through quarterly reviews with NSF program officers, annual reports covering deliverables, risks and plans, and new proposals.</li>
-            <li>Aligned technical teams and external clients on milestones and success metrics with project plans covering scope, resourcing, timelines and KPIs.</li>
+            <li>Supported 15,000+ users across 1,300+ accounts on a federally funded cloud platform by leading its operations and strategic delivery, alongside the FLOTO, FOUNT and REPETO programs (~$18M across 6 grants).</li>
+            <li>Helped win a new $2.5M NSF grant for agentic AI workflows by pitching and building Chameleon Concierge, a RAG assistant over the platform docs (Llama 3.3 70B, FAISS, cross-encoder reranking), later presented as an SC'25 poster. <a href="{{ '/work/chameleon-ai-docs/' | url }}">Case study</a></li>
+            <li>Traced about 1,200 publications to the platform for a PEARC'26 paper by leading the publication-impact analysis in Python and SQL, combining three bibliometric sources with user reports.</li>
+            <li>Maintained one-day turnaround and a low backlog for compute access by reviewing ~50 allocation requests and ~20 PI-status requests a month.</li>
+            <li>Reached 1,000+ total webinar attendees and ~400 monthly blog readers by launching a webinar series (14+ presented) and a monthly newsletter to drive AI engagement and feature adoption.</li>
+            <li>Turned user feedback into product improvements by building customer feedback loops into the platform documentation.</li>
+            <li>Kept a ~$18M grant portfolio funded through quarterly reviews with NSF program officers, annual reports on deliverables, risks and plans, and new proposals.</li>
+            <li>Delivered project milestones consistently on time and on scope by aligning technical teams and external clients on success metrics with project plans covering scope, resourcing, timelines and KPIs. <a href="{{ '/work/chameleon-platform/' | url }}">Case study</a></li>
         </ul>
     </div>
 
     <div class="resume-job">
         <div class="resume-job-head">
-            <h3>Technical Project Manager, Edge Computing · FLOTO, UChicago Data Science Institute</h3>
-            <span>10/2021 – 10/2023</span>
+            <h3>Technical Project Manager · Data Science Institute, University of Chicago</h3>
+            <span>2021 – 2023</span>
         </div>
-        <p>Directed deployment and operations for an edge platform supporting over a dozen State Broadband Offices, scaling from 0 to 1,000+ devices nationally, building pipelines that processed 180M data points, coordinating 40+ partners and managing ~$3M in total funding.</p>
         <ul>
-            <li>Ran the Internet Equity Initiative pilot that preceded FLOTO: about 250 resident-hosted devices in Chicago, Grafana monitoring, and four public data releases.</li>
-            <li>Procured 1,200+ computers for launch on a tight timeline ($200K budget), meeting supply deadlines and coming in under budget despite supply shortages.</li>
-            <li>Oversaw client engagement for rural and urban broadband assessments and scoped measurement needs for federal grants. Used field engineers as ambassadors to install 300 devices regionally.</li>
-            <li>Delivered a validated broadband quality dataset a month ahead of deadline, showing more than 50% of measured locations fell below federal thresholds. The data backed an FCC broadband reassessment in Michigan and a fiber grant application in Illinois.</li>
+            <li>Scaled an edge platform from 0 to 1,000+ devices nationally, supporting over a dozen State Broadband Offices, by directing its deployment and operations, building pipelines that processed 180M metrics, coordinating 40+ partners and managing ~$3M in funding. <a href="{{ '/work/floto-rollout/' | url }}">Case study</a></li>
+            <li>Produced four public data releases for broadband policy analysis by engineering a scalable prototype for the Internet Equity Initiative pilot, with 250 resident-hosted devices in Chicago and real-time monitoring in Grafana. <a href="{{ '/work/internet-equity-initiative/' | url }}">Case study</a></li>
+            <li>Delivered 1,200+ computers for launch on time and under a $200K budget despite supply shortages, managing procurement on a tight timeline.</li>
+            <li>Installed 300 devices regionally for rural and urban broadband assessments by working with field engineers, leading client engagement and defining technical requirements for federal grants.</li>
+            <li>Backed an FCC broadband reassessment in Michigan and a fiber grant in Illinois with a validated broadband quality dataset, delivered a month early, showing more than 50% of measured locations fell below federal thresholds.</li>
             <li>Secured $1.5M in additional funding by building dozens of multi-institutional partnerships and co-authoring a successful grant proposal to scale the infrastructure 5x.</li>
         </ul>
     </div>
 
     <div class="resume-job">
         <div class="resume-job-head">
-            <h3>Engagement Manager / Analyst · Criterion Economics, Washington, DC</h3>
-            <span>05/2014 – 03/2019</span>
+            <h3>Customer Success Associate · Stae (virtual)</h3>
+            <span>2020 – 2021</span>
         </div>
-        <p>Built the economic analysis behind expert testimony in 18 patent, commercial and regulatory matters for 12 clients, including Qualcomm, Verizon, UPS and First Data.</p>
         <ul>
-            <li>Contributed to 34 expert reports, declarations and witness statements, and supported 13 depositions and hearings. Matters included Qualcomm v. Apple at the ITC.</li>
-            <li>Structured expert testimony, positioned economic arguments, and delegated analysis across the staff team as Engagement Manager.</li>
-            <li>Promoted from Analyst to Senior Analyst to Engagement Manager.</li>
+            <li>Turned raw data from three local-government clients into structured tables for analysis and public dashboards by connecting client systems and APIs to Stae's civic data platform and writing JavaScript ingestion logic.</li>
+            <li>Made Guilford County, NC's budget transparent to the public by building open budget dashboards covering ten years of history and the current fiscal year.</li>
+            <li>Automated federal housing reporting for the City of Long Beach, CA by ingesting city housing data and building the dashboards officials used to file the reports.</li>
+            <li>Released internet speed data usable for local officials by bringing M-Lab data onto the platform as a community source (data spec, dashboard and North Carolina county map) and writing a <a href="https://medium.com/city-as-a-service/bringing-internet-speed-data-online-part-1-b90a45ed7edc">two-part blog series</a> on gaps in broadband data.</li>
         </ul>
     </div>
 
-    <h2>Publications</h2>
-    <ul>
-        {% for pub in publications %}<li><strong>{{ pub.title }}</strong>, {{ pub.venue }}</li>{% endfor %}
-    </ul>
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>Junior Web Developer · Solutions Street Consulting (virtual)</h3>
+            <span>2020</span>
+        </div>
+        <ul>
+            <li>Shipped front-end and back-end features for four client web applications built with Ruby on Rails, from webpage design through bug fixes.</li>
+            <li>Improved the performance and maintainability of client applications by optimizing database queries and refactoring existing code.</li>
+        </ul>
+    </div>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>Engagement Manager / Analyst · Criterion Economics, Washington, DC</h3>
+            <span>2014 – 2019</span>
+        </div>
+        <ul>
+            <li>Built the economic analysis behind expert testimony in 18 patent, commercial and regulatory matters for 12 clients, including Qualcomm, Verizon, UPS and First Data.</li>
+            <li>Backed expert testimony in high-stakes matters, including Qualcomm v. Apple at the ITC, by developing 34 expert reports and supporting 13 depositions and hearings.</li>
+            <li>Shaped the economic arguments in expert testimony by structuring reports and delegating analysis across the staff team.</li>
+            <li>Promoted from Analyst to Senior Analyst to Engagement Manager. <a href="{{ '/work/criterion-economics/' | url }}">Case study</a></li>
+        </ul>
+    </div>
+
+    <h2>Things I've built</h2>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3><a href="{{ '/work/#independent' | url }}">AI Deployments</a></h3>
+            <span>2026 – present</span>
+        </div>
+        <ul>
+            <li>Made the case to expand a production AI support deployment to four more brands with a 7-slide executive briefing and internal and customer-facing account health dashboards (Streamlit, Plotly) built on a target-based health score. <a href="{{ '/work/ai-deployment-ebr/' | url }}">Case study</a></li>
+            <li>Demonstrated the value of open-source AI models by routing 79% of unseen Firefox bugs to the right team for $0.27 per 1,000 with gpt-oss-120b, after building a Databricks lakehouse in Spark and SQL (bronze, silver, gold, AI/BI dashboard, Genie) over 27,786 bugs and testing open models with <code>ai_query()</code> and MLflow. <a href="{{ '/work/llm-bug-triage-lakehouse/' | url }}">Case study</a></li>
+            <li>Proved open models can match frontier model performance by matching Claude Opus 5.5 on support-ticket triage at 34–45x lower cost with gpt-oss-120b, benchmarking frontier and open models on Fireworks AI and the Anthropic API, modeling serverless vs dedicated-GPU break-even and running a LoRA fine-tune. <a href="{{ '/work/llm-ticket-triage/' | url }}">Case study</a></li>
+            <li>Showed that fine-tuning taught format but not reasoning: legal moves doubled (36% to 71%) while best-move accuracy stayed at 3% after fine-tuning Qwen 3.5 9B on 73k engine-labeled chess positions. <a href="{{ '/work/llm-chess-finetune/' | url }}">Case study</a></li>
+        </ul>
+    </div>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3><a href="https://harris.uchicago.edu/admitted-students/orientation-programs/capp-camp">MSCAPP Coding Camp</a>, University of Chicago</h3>
+            <span>Summers 2022 – 2023</span>
+        </div>
+        <ul>
+            <li>Prepared about 100 incoming MSCAPP graduate students over two summers for the program's coding work by co-leading a week-long onboarding camp on Python, Git and the command line.</li>
+            <li>Built the course website from scratch and developed the presentations, lesson plans and hands-on exercises students used to practice and test their skills.</li>
+        </ul>
+    </div>
 
     <h2>Education</h2>
-    <ul>
-        <li><strong>MS, Computational Analysis &amp; Public Policy</strong>, University of Chicago (2019–2021)</li>
-        <li><strong>BS, Economics and International Relations</strong>, William &amp; Mary</li>
-    </ul>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>MS, Computational Analysis &amp; Public Policy · University of Chicago</h3>
+            <span>2019 – 2021</span>
+        </div>
+        <ul>
+            <li>Coursework: Programming, Databases, Machine Learning, Statistics, Data Analysis and Visualization.</li>
+            <li>Board member of HarrisTech, a student organization; organized talks, hackathons and more on tech policy for students.</li>
+        </ul>
+    </div>
+
+    <div class="resume-job">
+        <div class="resume-job-head">
+            <h3>BS, Economics and International Relations · William &amp; Mary</h3>
+            <span>2010 – 2014</span>
+        </div>
+        <ul>
+            <li>Coursework: Econometrics, Business Analysis, Microeconomics, Macroeconomics, International Trade, Economic Development and Arabic.</li>
+            <li>Studied Arabic abroad in Jordan (Summer 2013).</li>
+        </ul>
+    </div>
 
     <h2>Skills</h2>
     <ul>
         <li><strong>AI and LLMs:</strong> LLM deployment and fine-tuning (Fireworks AI, Anthropic API, Databricks Model Serving, LoRA), model evals and benchmarking, inference cost modeling (serverless vs dedicated GPU), prompt engineering, RAG (FAISS, embeddings, reranking), AI-assisted development</li>
         <li><strong>Cloud and infrastructure:</strong> AWS, GCP, OpenStack, Databricks (Unity Catalog, MLflow), Kubernetes, Docker, edge device fleets (Raspberry Pi, OpenBalena, Salt), monitoring with Grafana, data pipelines, APIs</li>
-        <li><strong>Data and analysis:</strong> Python, SQL, economic and cost modeling, bibliometric and impact analysis, survey design, data visualization</li>
+        <li><strong>Data and analysis:</strong> Python, SQL, Spark, Hadoop, economic and cost modeling, bibliometrics and impact analysis, survey design, data visualization</li>
         <li><strong>Program management:</strong> Federal grant writing and NSF reporting (~$18M across 6 grants), multi-stakeholder and government partnerships, customer onboarding, procurement and vendor management, field operations, events and webinar programs, cross-functional leadership</li>
-        <li><strong>Tools:</strong> Jira, Confluence, GitHub, Streamlit, WordPress, Google Analytics</li>
+        <li><strong>Tools:</strong> Jira, Confluence, GitHub, Streamlit, WordPress, Google Analytics, Tableau</li>
         <li><strong>Languages:</strong> English (native), Spanish (proficient)</li>
+        <li><strong>Things I like:</strong> Dancing with my daughter, cooking with my wife, going on family hikes in the Colorado Rockies, playing chess, rock climbing, traveling (20 countries/45 states), listening to music (90s hip hop, soul music, banda), learning new languages, watching favorite TV shows (Peaky Blinders, Arrested Development), reading books, especially novels (A Brave New World, Station Eleven, King Leopold’s Ghost)</li>
+    </ul>
+
+    <h2>Publications</h2>
+    <ul>
+        {% for pub in publications %}<li>{% if pub.url %}<a href="{{ pub.url }}"><strong>{{ pub.title }}</strong></a>{% else %}<strong>{{ pub.title }}</strong>{% endif %}, {{ pub.venue }}</li>{% endfor %}
     </ul>
 </section>

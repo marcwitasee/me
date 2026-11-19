@@ -5,7 +5,7 @@ summary: "Fine-tuned Qwen 3.5 9B on 73,000 engine-labeled chess positions to tes
 type: independent
 org: Independent project
 role: Designed and ran it, building with an AI coding assistant
-dates: "Oct 2026"
+dates: "2026"
 order: 4
 featured: true
 highlight: "Fine-tuning doubled legal moves but never improved move quality."

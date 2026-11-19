@@ -5,7 +5,7 @@ summary: "An end-to-end Databricks build on Mozilla's public Firefox bug tracker
 type: independent
 org: Independent project
 role: Designed and ran it, building with an AI coding assistant
-dates: "Oct – Nov 2026"
+dates: "2026"
 order: 2
 featured: true
 highlight: "79% of unseen bugs routed to the right team, for $0.27 per 1,000."
